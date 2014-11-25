@@ -233,7 +233,7 @@
     <div id="skrollr-body">
         <section id="page1" class="scroll pageHeight page white_color height_1320" data-order="1">
             <div id="page1Container">
-                <div id="Home" class="pageScrollSpeed scroll pageHeight subPage" data-type="background" data-speed="0">
+                <div id="Home" class="pageScrollSpeed scroll pageHeight subPage">
                     <div class="contentContainer">
                         <div class="homemain">
                             {{ HTML::image('images/maintxt.png') }}
