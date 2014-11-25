@@ -49,7 +49,7 @@ return array(
             'type' => 'text',
         ),
         'image' => array(
-            'title' => 'Image',
+            'title' => 'Image (Max. size 2MB)',
             'type' => 'image',
             'location' => public_path() . '/images/managers/',
             'naming' => 'random',
