@@ -23,3 +23,9 @@ Route::post('/conversation', 'HomeController@conversation');
 Route::post('/notify', 'HomeController@notify');
 
 Route::controller('/login', 'LoginController');
+
+Route::get('logout', function()
+{
+    Auth::logout();
+    return Redirect::intended('/');
+});
