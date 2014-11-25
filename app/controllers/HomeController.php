@@ -10,12 +10,7 @@ class HomeController extends BaseController {
 
         $array = array();
         foreach ($states as $state) {
-
-            $array = array_add($array, $state->name, array_values(array_sort( $state->cities->lists('name'), function($value)
-            {
-                return $value;
-            })));
-
+            $array = array_add($array, $state->name, $state->cities->sortBy('name')->lists('id','name'));
         }
 
         $response = [

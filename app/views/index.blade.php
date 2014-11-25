@@ -15,7 +15,6 @@
         var styles = [];
 
         $.get('/offices', function(items) {
-
             offices = items.offices;
             var pairs = items.states;
             var $state = $('#state');
@@ -35,9 +34,8 @@
                 var val = $(this).val();
                 if (val.length == 0) {
                     $.each(pairs, function(i, c) {
-                        
                         $.each(c, function(x, y) {
-                            $city.append($('<option value="' + y.capitalize() + '"> ' + y.capitalize() + '</option>'));
+                            $city.append($('<option value="' + y.capitalize() + '"> ' + x.capitalize() + '</option>'));
                         });
                     
                     });                    
@@ -47,7 +45,7 @@
                     $.each(pairs, function(i, c) {
                         if(i.toLowerCase() == val.toLowerCase()){
                             $.each(c, function(x, y) {
-                                $city.append($('<option value="' + y.capitalize() + '"> ' + y.capitalize() + '</option>'));
+                                $city.append($('<option value="' + y.capitalize() + '"> ' + x.capitalize() + '</option>'));
                             });
                         }
                     });                    
@@ -67,7 +65,7 @@
 
 
             map = new google.maps.Map(document.getElementById("mappy"), myOptions);
-            debugger;
+
             if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
                 map.setOptions({ draggable: false });
             }
@@ -92,10 +90,10 @@
 
         $("#location_form").submit(function(e) {
             e.preventDefault();
-            debugger;
             var city = $("#city").val();
             var found_offices = $.grep(offices, function(v) {
-                return v.city.toLowerCase() === city.toLowerCase();
+            debugger;
+                return v.city_id.toLowerCase() === city.toLowerCase();
             });
 
             setMarkers(map, found_offices);

@@ -9,7 +9,7 @@ class Office extends Eloquent {
     */
     protected $table = 'offices';
 
-    protected $hidden = array('manager_id', 'city_id', 'created_at', 'updated_at');
+    protected $hidden = array('manager_id', 'created_at', 'updated_at');
 
     /**
      * Defines a one-to-one relationship.
