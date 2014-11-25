@@ -35,11 +35,11 @@ return array(
             'type' => 'text',
         ),
         'address' => array(
-            'title' => 'Title',
+            'title' => 'Address',
             'type' => 'text',
         ),
         'phone' => array(
-            'title' => 'License',
+            'title' => 'Telephone Number',
             'type' => 'text',
         ),
         'description' => array(
@@ -47,9 +47,10 @@ return array(
             'type' => 'textarea',
             'limit' => 500, //optional, defaults to no limit
             'height' => 130, //optional, defaults to 100
+            'width' => 500,
         ),
         'image' => array(
-            'title' => 'Image',
+            'title' => 'Image (Max. size 2MB)',
             'type' => 'image',
             'location' => public_path() . '/images/offices/',
             'naming' => 'random',
