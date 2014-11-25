@@ -6,12 +6,16 @@ class HomeController extends BaseController {
 	{
         $offices = Office::with('manager')->get();
 
-        $states = State::with('cities')->get();
+        $states = State::orderBy('name', 'ASC')->with('cities')->get();
 
         $array = array();
         foreach ($states as $state) {
 
-            $array = array_add($array, $state->name, $state->cities->lists('name'));
+            $array = array_add($array, $state->name, array_values(array_sort( $state->cities->lists('name'), function($value)
+            {
+                return $value;
+            })));
+
         }
 
         $response = [
