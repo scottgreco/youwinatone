@@ -22,4 +22,15 @@ return array(
             'type' => 'text',
         )
     ),
+
+    'sort' => array(
+        'field' => 'name',
+        'direction' => 'asc',
+    ),
+
+    'filters' => array(
+        'name' => array(
+            'title' => 'State name',
+        ),
+    ),
 );

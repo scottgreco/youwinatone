@@ -14,7 +14,7 @@ class CreateOfficeTables extends Migration {
 	{
         Schema::create('managers', function($table)
         {
-            $table->integer('id');
+            $table->increments('id');
             $table->string('name');
             $table->string('license');
             $table->string('description');

@@ -33,4 +33,15 @@ return array(
             'type' => 'password',
         ),
     ),
+
+    'sort' => array(
+        'field' => 'username',
+        'direction' => 'asc',
+    ),
+
+    'filters' => array(
+        'username' => array(
+            'title' => 'Username',
+        ),
+    ),
 );

@@ -57,4 +57,15 @@ return array(
             'size_limit' => 2
         )
     ),
+
+    'sort' => array(
+        'field' => 'name',
+        'direction' => 'asc',
+    ),
+
+    'filters' => array(
+        'name' => array(
+            'title' => 'Manager name',
+        ),
+    ),
 );

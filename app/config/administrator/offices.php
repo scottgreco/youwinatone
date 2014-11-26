@@ -78,4 +78,15 @@ return array(
             'name_field' => 'name', //what column or accessor on the other table you want to use to represent this object
         ),
     ),
+
+    'sort' => array(
+        'field' => 'name',
+        'direction' => 'asc',
+    ),
+
+    'filters' => array(
+        'name' => array(
+            'title' => 'Office name',
+        ),
+    ),
 );
