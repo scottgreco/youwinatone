@@ -143,12 +143,10 @@ $(document).ready(function () {
 
     $window = $(window);
 	var xCart = 1;
-	$('div[data-type="background"]').each(function(){
-			var $self = $(this),			
-			offsetCoords = $self.offset(),
-			topOffset = offsetCoords.top;
 
-			var offset = 0;
+
+
+        var offset = 0;
 	    var offset2 = 0;
         if ($(window).width() <= 768) {
             offset = -400;
@@ -157,22 +155,6 @@ $(document).ready(function () {
 
 
 	    $(window).scroll(function() {
-				var yPos = -($window.scrollTop() / $self.data('speed'));
-				if( yPos == 0 )
-				{
-					yPos = 130;
-				}
-				else{
-				
-				}
-				if(xCart)
-				{
-					yPos = 130;
-					xCart=0;
-				}
-				var coords = '50% '+ yPos + 'px';
-				//alert(coords);
-				$self.css({ backgroundPosition: coords });
 				
 				var s = $(window).scrollTop(),
                 d = $(document).height(),
@@ -539,7 +521,7 @@ $(document).ready(function () {
 		}
 	    }); // window scroll
 			    
-	});	// each data-type
+
 
 	function addTweens(elems, opacity, delay) {        
         if (!delay) {

@@ -11,6 +11,15 @@ class Office extends Eloquent {
 
     protected $hidden = array('manager_id', 'created_at', 'updated_at');
 
+    public static $rules = array(
+        'name' => 'required',
+        'address' => 'required',
+        'lat' => 'required',
+        'lng' => 'required',
+        'city_id' => 'required',
+        'manager_id' => 'required',
+    );
+
     /**
      * Defines a one-to-one relationship.
      *

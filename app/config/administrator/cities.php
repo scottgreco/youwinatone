@@ -29,7 +29,8 @@ return array(
         'state' => array(
             'type' => 'relationship',
             'title' => 'State',
-            'name_field' => 'name', //what column or accessor on the other table you want to use to represent this object
+            'name_field' => 'name',
+            'sort_field' => 'name',
         ),
     ),
 

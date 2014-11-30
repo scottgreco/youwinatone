@@ -60,7 +60,8 @@ return array(
         'manager' => array(
             'type' => 'relationship',
             'title' => 'Manager',
-            'name_field' => 'name', //what column or accessor on the other table you want to use to represent this object
+            'name_field' => 'name',
+            'options_sort_field' => 'name',
         ),
         'lat' => array(
             'title' => 'Latitude',
@@ -75,7 +76,8 @@ return array(
         'city' => array(
             'type' => 'relationship',
             'title' => 'City',
-            'name_field' => 'name', //what column or accessor on the other table you want to use to represent this object
+            'name_field' => 'name',
+            'options_sort_field' => 'name',
         ),
     ),
 

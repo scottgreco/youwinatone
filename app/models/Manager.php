@@ -1,6 +1,6 @@
 <?php
 
-class Manager extends Eloquent {
+class Manager extends EloquentBaseModel {
 
     /**
      * The database table used by the model.
@@ -8,6 +8,8 @@ class Manager extends Eloquent {
      * @var string
      */
     protected $table = 'managers';
+
+    protected $forcedNullFields = ['email'];
 
     protected $hidden = array('created_at', 'updated_at');
 
