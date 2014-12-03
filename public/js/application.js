@@ -80,8 +80,8 @@ $(document).ready(function () {
     });
 
 
-    $('.notyfymetxt').bind('click', function(event) {
-        $("#notify-modal").modal("show");        
+    $('#notifyMe').bind('click', function(event) {
+        $("#notify-modal").modal("show");
     });
 
 
@@ -161,8 +161,7 @@ $(document).ready(function () {
                 c = $(window).height();
 
 	            var p = 0;
-	            console.log("s: " + s);
-	            console.log("d: " + d);
+
                 if (s <= 1400) {
                     p = (s / 1400) * 24;
                 }
@@ -202,8 +201,6 @@ $(document).ready(function () {
                 });
             }
 
-            console.log("offset " + offset);
-            console.log("offset2 " + offset2);
 
             var isMobileX = false;
             if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
@@ -309,8 +306,6 @@ $(document).ready(function () {
                 addTweens(['.box7 .txtrightwithoutbg span'], 0);
             }
 
-            console.log("s: "+s);
-            console.log(4500 + offset);
 
             if (s <= 7300 + offset + offset2) {
 	            }
@@ -887,7 +882,7 @@ $(document).ready(function () {
             phone: phone.val(),
             location: location.val()
         }, function (result) {
-            $("#notify-modal").hide();
+            $("#notify-modal").modal('hide');
             $("#modal-email").modal("show");
             $("#notify_form .modal-btn").prop('disabled', false);
             $("#notify_form .modal-btn").val("Send Message");
@@ -959,7 +954,7 @@ $(document).ready(function () {
             message: message,
             emailTo: $("#man_email").val()
         }, function (result) {
-            $("#map-modal").hide();
+            $("#map-modal").modal('hide');
             $("#modal-email").modal("show");
             $("#conversation_form .modal-btn").prop('disabled', false);
             $("#conversation_form .modal-btn").val("Send Message");

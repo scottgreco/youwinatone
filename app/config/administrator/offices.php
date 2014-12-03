@@ -91,4 +91,13 @@ return array(
             'title' => 'Office name',
         ),
     ),
+
+    'messages' => array(
+        'name.required' => 'Name field is required',
+        'address.required' => 'Address field is required',
+        'lat.required' => 'Latitude field is required',
+        'lng.required' => 'Longitude field is required',
+        'city_id.required' => 'City field is required',
+        'manager_id.required' => 'Manager field is required',
+    )
 );

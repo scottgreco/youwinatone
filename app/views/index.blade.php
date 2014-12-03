@@ -80,6 +80,18 @@
             map.mapTypes.set('tehgrayz', mapType);
             map.setMapTypeId('tehgrayz');
 
+            google.maps.event.addListener(map, 'zoom_changed', function() {
+                zoomChangeBoundsListener =
+                    google.maps.event.addListener(map, 'bounds_changed', function(event) {
+                        if (this.getZoom() > 15 && this.initialZoom == true) {
+                            // Change max/min zoom here
+                            this.setZoom(15);
+                            this.initialZoom = false;
+                        }
+                    google.maps.event.removeListener(zoomChangeBoundsListener);
+                });
+            });
+
             setMarkers(map, offices);
 
             $('div').on('touchstart', '.gmnoprint div[title^=Pan], .gmnoprint div[title^=Obtiene]', function () {
@@ -92,7 +104,6 @@
             e.preventDefault();
             var city = $("#city").val();
             var found_offices = $.grep(offices, function(v) {
-            debugger;
                 return v.city_id.toLowerCase() === city.toLowerCase();
             });
 
@@ -125,6 +136,7 @@
 
             bindMarker(marker, map, coor);
         }
+        map.initialZoom = true;
         map.fitBounds(fullBounds);
     }
 
@@ -165,18 +177,7 @@
 
                     infowindow.close();
 
-                    $(".modal-form").hide();
-                    $("#notify-modal").hide();
-
-                    $('#map-modal').show().addClass('in');
-                    $('#map-modal .modal-dialog').unbind('click').bind('click', function(e) {
-                        e.stopPropagation();
-                    });
-                    $('#map-modal').find('.close').unbind('click').bind('click', function() {
-                        $('#map-modal').hide().removeClass('in');
-                        $(".modal-body").show();
-                        $("#notify-modal").hide();
-                    });
+                    $('#map-modal').modal('show');
 
                     var manager = office.manager;
 
@@ -898,7 +899,7 @@
             <div id="mappy" class="mapiframe"></div>
             <div class="notyfyme">
                 <div class="notyfymetxt">If we don't, chances are one is coming soon.</div>
-                <div class="notyfymetxt"><a href="#" data-toggle="modal" data-target="notify-modal">NOTIFY ME WHEN YOU'RE IN MY AREA</a></div>
+                <div class="notyfymetxt"><a id="notifyMe" href="#" data-toggle="modal" data-target="notify-modal">NOTIFY ME WHEN YOU'RE IN MY AREA</a></div>
             </div>
         </section>
         <section id="page5" class="scroll height_840 page blck_color" data-order="6">
@@ -1005,7 +1006,7 @@
                             <div class="us_name"></div>
                             <div class="us_license" style="font-size: 12px"></div>
                             <div class="us_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel hendrerit erat. Aenean posuere congue odio, ut fermentum ipsum tempor sed. Vivamus non leo molestie, congue arcu sed, fringilla tortor. Quisque volutpat aliquet tincidunt.</div>
-                            <div class="notyfymetxt form_contact"><a style="cursor: pointer">CONTACT THIS OFFICE</a></div>
+                            <div class="notyfymetxt form_contact"><a data-toggle="modal" data-target="map-modal" style="cursor: pointer">CONTACT THIS OFFICE</a></div>
                         </div>
                     </div>
                 </div>

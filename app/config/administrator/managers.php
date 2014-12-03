@@ -68,4 +68,9 @@ return array(
             'title' => 'Manager name',
         ),
     ),
+
+    'messages' => array(
+        'name.required' => 'Name field is required',
+        'title.required' => 'Title field is required'
+    )
 );

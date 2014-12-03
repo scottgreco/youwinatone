@@ -198,8 +198,8 @@ body{height:auto !important;}
 .nbs-flexisel-container {     margin:0px auto;    margin-top: 75px;    max-width: 770px;    position: relative;    width: 100%;}
 .nbs-flexisel-ul {    position:relative;    width:9999px;    margin:0px;    padding:0px;    list-style-type:none;       text-align:center;  }
 .nbs-flexisel-inner {    float: left;    margin-left: 0%;    overflow: hidden;    width: 100%;   }
-.nbs-flexisel-item {    float:left; margin:0px;    padding:0px;    cursor:pointer;    position:relative;    line-height:0px; text-align: center}
-.nbs-flexisel-item img {    width: 80%; cursor: pointer;    position: relative;    margin-top: 10px;    margin-bottom: 10px;    max-width:250px;    max-height:75px; height: 75px;}
+.nbs-flexisel-item {    float:left; margin:0px;    padding:0px;    position:relative;    line-height:0px; text-align: center}
+.nbs-flexisel-item img {    width: 80%;   position: relative;    margin-top: 10px;    margin-bottom: 10px;    max-width:250px;    max-height:75px; height: 75px;}
 .nbs-flexisel-nav-left,
 .nbs-flexisel-nav-right {    width: 59px;    height: 75px;     position: absolute;    cursor: pointer;    z-index: 100;    opacity: 0.5;}
 .nbs-flexisel-nav-left {    left: -65px;    background: url(../images/arrow_left.png) no-repeat;}
@@ -217,7 +217,7 @@ body{height:auto !important;}
 
 #Lab  form{width:100%; text-align:center; font-family: museo_sans300;}
 #Lab  form .selectbox{ background-image: url("../images/select_Arrow.png");  overflow:hidden;   background-position: right center;    background-repeat: no-repeat;    border: 1px solid #f2f2f3;    border-radius: 5px;    box-shadow: 0 0 1px 0 #d0d0d0 inset;    display: inline-block;    height: 44px;    margin: 0 10px;    padding: 0;    width: 270px;}
-#Lab  form select{ font-size: 18px; background: none;    border: medium none;    color: #5c5c5c;    padding: 10px 8px;    width: 300px; font-family: museo_sans300; -webkit-appearance: none;}
+#Lab  form select{ line-height: 20px;font-size: 18px; background: none;    border: medium none;    color: #5c5c5c;    padding: 10px 8px;    width: 300px; font-family: museo_sans300; -webkit-appearance: none;}
 #Lab  form  input[type="submit"]{background:#f7c55a;    border: medium none;    color: #fff;    font-family: museo_sans300;    font-size: 16px;    padding: 12px 37px;}
 #Lab  form .submit{ border-radius: 5px; overflow:hidden;   display: inline-block;    height: 44px;    margin: 0 10px;    padding: 0;    width: 173px;}
 
@@ -1127,6 +1127,8 @@ footer div.socialmedia a {
      #Research form .row{width: 40%;height: 215px;}
 
 @media only screen and (min-width: 960px) and (max-width: 1229px) {
+    .box7 .corclecontainerbtm img { margin-top: 256px; }
+
     body{height:auto !important;}
     #Home{background-size:auto 100%; }
     #navContainer {	  max-width: 960px;}
