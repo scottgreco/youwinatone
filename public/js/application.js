@@ -133,9 +133,10 @@ $(document).ready(function () {
         };
     });
 
+
     $(".form_contact a").click(function () {
-        $(".modal-body").hide("medium");
-        $(".modal-form").show("medium");
+        $("#map-modal .modal-body").hide("medium");
+        $("#map-modal .modal-form").show("medium");
         setTimeout(function () { $("#notify-modal").hide(); }, 100);
         $("#notify-modal").hide();
         $("#notify-modal span").click();
@@ -948,10 +949,10 @@ $(document).ready(function () {
         $("#conversation_form .modal-btn").prop('disabled', true);
         $("#conversation_form .modal-btn").val("Sending...");
         $.post(baseUrl + "/conversation", {
-            name: name,
-            email: email,
-            phone: phone,
-            message: message,
+            name: name.val(),
+            email: email.val(),
+            phone: phone.val(),
+            message: message.val(),
             emailTo: $("#man_email").val()
         }, function (result) {
             $("#map-modal").modal('hide');
