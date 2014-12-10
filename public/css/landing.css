@@ -1130,7 +1130,8 @@ footer div.socialmedia a {
     .box7 .corclecontainerbtm img { margin-top: 256px; }
 
     body{height:auto !important;}
-    #Home{background-size:auto 100%; }
+
+    #Home{background-size:180% auto; background-position: -200px 100px}
     #navContainer {	  max-width: 960px;}
     .contentContainer { max-width: 960px;}
     #navLogo{width:300px; background-size:300px auto;}

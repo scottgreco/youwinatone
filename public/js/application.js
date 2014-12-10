@@ -142,6 +142,11 @@ $(document).ready(function () {
         $("#notify-modal span").click();
     });
 
+    $('#map-modal').on('hide.bs.modal', function (event) {
+        $("#map-modal .modal-body").show();
+        $("#map-modal .modal-form").hide();
+    });
+
     $window = $(window);
 	var xCart = 1;
 
