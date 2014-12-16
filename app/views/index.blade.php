@@ -986,7 +986,7 @@
 
                             </div>
                         </div>
-                        <div class="col-sm-8 office_text">
+                        <div class="col-sm-8 office_text" style="padding-left:0">
                             <div class="off_name" style="font-size: 20px"></div>
                             <div class="off_address" style="font-size: 12px; width: 145px;"></div>
                             <div class="off_phone"></div>
@@ -1001,7 +1001,7 @@
 
                             </div>
                         </div>
-                        <div class="col-sm-8 manager_text">
+                        <div class="col-sm-8 manager_text" style="padding-left:0">
                             <div class="us_title" style="font-size: 20px"></div>
                             <div class="us_name"></div>
                             <div class="us_license" style="font-size: 12px"></div>

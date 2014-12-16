@@ -1,4 +1,4 @@
-<?php
+    <?php
 
 return array(
 
@@ -28,7 +28,7 @@ return array(
 	|
 	*/
 
-	'host' => 'smtp.office365.com',
+	'host' => 'smtp.gmail.com',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -54,7 +54,7 @@ return array(
 	|
 	*/
 
-	'from' => array('address' => 'notificaciones@cloversistemas.com.ar', 'name' => null),
+	'from' => array('address' => 'ywao@realtyonegroup.com', 'name' => null),
 
 	/*
 	|--------------------------------------------------------------------------
@@ -80,7 +80,7 @@ return array(
 	|
 	*/
 
-	'username' => 'notificaciones@cloversistemas.com.ar',
+	'username' => 'ywao@realtyonegroup.com',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -93,7 +93,7 @@ return array(
 	|
 	*/
 
-	'password' => 'Bleach89*',
+	'password' => 'Rog2014*',
 
 	/*
 	|--------------------------------------------------------------------------

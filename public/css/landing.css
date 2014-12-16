@@ -2070,9 +2070,14 @@ footer div.socialmedia a {
 .box6 .txtleftbtm, .box6 .txtleftbtm span, .box6 .txtrightwithoutbg span,
 .box7 .boxheading, .box7 .dottedcircle, .box7 .arc2,
 .box7 .txtrightwithoutbg span,
-
+.corclecontainerbtm
 {
     opacity: 0;
+}
+
+.box1 .corclecontainerbtm,
+.box2 .corclecontainerbtm {
+    opacity: 1;
 }
 
 
