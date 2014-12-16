@@ -142,7 +142,7 @@
 
     function bindMarker(marker, map, office) {
         var contentString = '<div>' +
-            '<div class="infowindow-img"><img class="office_img" src="' + baseUrl + '/images/building.png' + '" data-original="' + baseUrl + office["image"] + '" alt="" /></div>' +
+            '<div class="infowindow-img"><img class="office_img" src="' + baseUrl + '/images/building.png' + '" data-original="' + baseUrl + 'images/offices/' + office["image"] + '" alt="" /></div>' +
             '<div class="infowindow-text">' +
             '<span>' + office["name"].toUpperCase() + '<br/>' + office["address"] + '<br/>' + office["phone"] + '<br/><a href="javascript:void(0);" class="view-more">View more</a></span>' +
             '</div>' +
@@ -181,7 +181,7 @@
 
                     var manager = office.manager;
 
-                    $(".office_img").attr("data-original", baseUrl +  office["image"]);
+                    $(".office_img").attr("data-original", baseUrl + 'images/offices/' + office["image"]);
                     $(".office_img").attr("src", baseUrl + "/images/building.png");
                     $(".office_img").lazyload({
                         effect: "fadeIn"
