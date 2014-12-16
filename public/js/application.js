@@ -159,9 +159,17 @@ $(document).ready(function () {
             //offset2 = -600;
         }
 
+    var oldPageYOffset = 0;
 
 	    $(window).scroll(function() {
-				
+
+            if (window.pageYOffset != oldPageYOffset)
+            {
+                oldPageYOffset = window.pageYOffset;
+            }else{
+                return
+            }
+
 				var s = $(window).scrollTop(),
                 d = $(document).height(),
                 c = $(window).height();
@@ -523,6 +531,7 @@ $(document).ready(function () {
 	    }); // window scroll
 			    
 
+    $(".corclecontainer").height(0);
 
 	function addTweens(elems, opacity, delay) {        
         if (!delay) {

@@ -661,7 +661,7 @@
                             </div>
                             <div class="arc2"></div>
                         </div>
-                        <div class="corclecontainerbtm" id="bottombox2" style="height: 385px;position: relative;"></div>
+                        <div class="corclecontainerbtm" id="bottombox2" style="height: 0px;position: relative;"></div>
                     </div>
                 </div>
                 <div class="blackbox_animation white_color">
@@ -692,7 +692,7 @@
                             <div class="txtrightbtm txtcolorblack"><span>Accessible 24/7</span></div>
                             <div class="arc3"></div>
                         </div>
-                        <div class="corclecontainerbtm" style="height: 385px;position: relative;"></div>
+                        <div class="corclecontainerbtm" style="height: 0px;position: relative;"></div>
                     </div>
                 </div>
                 <div class="blackbox_animation blck_color">
@@ -720,7 +720,7 @@
                             </div>
                             <div class="arc3"></div>
                         </div>
-                        <div class="corclecontainerbtm" style="height: 385px;position: relative;"></div>
+                        <div class="corclecontainerbtm" style="height: 0px;position: relative;"></div>
                     </div>
                 </div>
                 <div class="blackbox_animation white_color">
@@ -743,7 +743,7 @@
                             <div class="txtrightwithoutbg txtcolorblack"><span>ONE University</span></div>
                             <div class="arc4" ></div>
                         </div>
-                        <div class="corclecontainerbtm" style="height: 331px;position: relative;"></div>
+                        <div class="corclecontainerbtm" style="height: 0px;position: relative;"></div>
                     </div>
                 </div>
 
@@ -776,7 +776,7 @@
                             </div>
                             <div class="arc4"></div>
                         </div>
-                        <div class="corclecontainerbtm" style="height: 385px;position: relative;"></div>
+                        <div class="corclecontainerbtm" style="height: 0px;position: relative;"></div>
                     </div>
                 </div>
 
