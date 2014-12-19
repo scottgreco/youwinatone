@@ -3,8 +3,22 @@ String.prototype.capitalize = function () {
 }
 
 
-
 $(document).ready(function () {
+
+
+
+    function centerModal() {
+        $(this).css('display', 'block');
+        var $dialog = $(this).find(".modal-dialog");
+        var offset = ($(window).height() - $dialog.height()) / 2;
+        // Center modal vertically in window
+        $dialog.css("margin-top", offset);
+    }
+
+    $('.modal').on('show.bs.modal', centerModal);
+    $(window).on("resize", function () {
+        $('.modal:visible').each(centerModal);
+    });
 
     // This entire section makes Bootstrap Modals work with iOS
     if( navigator.userAgent.match(/iPhone|iPad|iPod/i) ) {
@@ -531,7 +545,6 @@ $(document).ready(function () {
 	    }); // window scroll
 			    
 
-    $(".corclecontainer").height(0);
 
 	function addTweens(elems, opacity, delay) {        
         if (!delay) {
