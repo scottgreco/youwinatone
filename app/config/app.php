@@ -123,8 +123,7 @@ return array(
 		'Illuminate\Workbench\WorkbenchServiceProvider',
         'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
         'CeesVanEgmond\Minify\MinifyServiceProvider',
-        'Frozennode\Administrator\AdministratorServiceProvider',
-        'Way\Generators\GeneratorsServiceProvider'
+        'Frozennode\Administrator\AdministratorServiceProvider'
 
 	),
 
