@@ -109,12 +109,7 @@
                     <li><a target="_blank"  href="http://cloud.digipage.net/go/one_magazine_issue_4/"><span>ONE</span> Magazine</a></li>
                 </ul>
                 <div class="socialmedia">
-                    <a target="_blank" href="https://www.facebook.com/RealtyONEGroup" class="facebook"></a>
-                    <a target="_blank"  href="https://twitter.com/RealtyONEnews" class="twitter"></a>
-                    <a target="_blank"  href="https://plus.google.com/+Realtyonegroup/posts" class="gplus"></a>
-                    <a target="_blank"  href="http://www.pinterest.com/realtyonegroup/" class="pinit"></a>
-                    <a target="_blank"  href="http://blog.realtyonegroup.com/" class="rss"></a>
-                    <a target="_blank"  href="http://instagram.com/realtyonegroup" class="histogram"></a>
+                    Copyright © 2014 RealtyONEGroup All rights reserved
                 </div>
             </div>
         </footer>

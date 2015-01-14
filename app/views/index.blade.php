@@ -130,7 +130,8 @@
 
             var marker = new google.maps.Marker({
                 position: myLatLng,
-                map: map
+                map: map,
+                icon:  baseUrl + '/images/marker.png'
             });
             eviction_list.push(marker);
 
@@ -142,7 +143,7 @@
 
     function bindMarker(marker, map, office) {
         var contentString = '<div>' +
-            '<div class="infowindow-img"><img class="office_img" src="' + baseUrl + '/images/building.png' + '" data-original="' + baseUrl + 'images/offices/' + office["image"] + '" alt="" /></div>' +
+            '<div class="infowindow-img"><img class="office_img" src="' + baseUrl + '/images/bx1.png' + '" data-original="' + baseUrl + 'images/offices/' + office["image"] + '" alt="" /></div>' +
             '<div class="infowindow-text">' +
             '<span>' + office["name"].toUpperCase() + '<br/>' + office["address"] + '<br/>' + office["phone"] + '<br/><a href="javascript:void(0);" class="view-more">View more</a></span>' +
             '</div>' +
@@ -182,7 +183,7 @@
                     var manager = office.manager;
 
                     $(".office_img").attr("data-original", baseUrl + 'images/offices/' + office["image"]);
-                    $(".office_img").attr("src", baseUrl + "/images/building.png");
+                    $(".office_img").attr("src", baseUrl + "/images/bx1.png");
                     $(".office_img").lazyload({
                         effect: "fadeIn"
                     });
@@ -232,7 +233,7 @@
 @section('content')
 
     <div id="skrollr-body">
-        <section id="page1" class="scroll pageHeight page white_color height_1320" data-order="1">
+        <section id="page1" class="scroll page white_color" data-order="1">
             <div id="page1Container">
                 <div id="Home" class="pageScrollSpeed scroll pageHeight subPage">
                     <div class="contentContainer">
@@ -270,10 +271,11 @@
                     </div>
                 </div>
             </div>
+            <div style="clear: both"></div>
         </section>
-        <section id="page2" class="scroll pageHeight page blck_color height_1320" data-order="2">
+        <section id="page2" class="scroll page blck_color" data-order="2">
             <div id="Culture" class="parentPage">
-                <div id="Data" class="pageScrollSpeed scroll pageHeight subPage">
+                <div id="Data" class="pageScrollSpeed scroll subPage">
                     <div class="contentContainer" style="text-align: center; letter-spacing: 1px;">
                         <p style="margin-bottom: 2em">
                             <span>contribute to a vibrant culture</span><br />
@@ -550,11 +552,11 @@
                             In Nation
                         </div>
                         <div class="box">
-                            <span class="timer yellow_sign" data-from="0" data-to="50"></span><span class="small_part">+</span><br />
+                            <span class="timer yellow_sign" data-from="0" data-to="55"></span><span class="small_part">+</span><br />
                             Offices
                         </div>
                         <div class="box">
-                            <span class="timer yellow_sign" data-from="0" data-to="5000"></span><span class="small_part">+</span><br />
+                            <span class="timer yellow_sign" data-from="0" data-to="5500"></span><span class="small_part">+</span><br />
                             Agents
                         </div>
                         <div class="box">
@@ -622,8 +624,9 @@
                                             MORE of Everything!</span>
                                     </div>
                                     <div class="arc"></div>
+                                    <div class="border-animation"></div>
                                 </div>
-                                <div class="corclecontainerbtm margin_top44" id="bottombox1" style="margin-top: 46px;"></div>
+                                <div class="corclecontainerbtm margin_top44" id="bottombox1" style="margin-top: 77px;"></div>
                             </div>
                         </div>
 
@@ -660,6 +663,7 @@
                                     transactions</span>
                             </div>
                             <div class="arc2"></div>
+                            <div class="border-animation"></div>
                         </div>
                         <div class="corclecontainerbtm" id="bottombox2" style="height: 0px;position: relative;"></div>
                     </div>
@@ -691,6 +695,7 @@
                             </div>
                             <div class="txtrightbtm txtcolorblack"><span>Accessible 24/7</span></div>
                             <div class="arc3"></div>
+                            <div class="border-animation"></div>
                         </div>
                         <div class="corclecontainerbtm" style="height: 0px;position: relative;"></div>
                     </div>
@@ -719,6 +724,7 @@
                                     own business!</span>
                             </div>
                             <div class="arc3"></div>
+                            <div class="border-animation"></div>
                         </div>
                         <div class="corclecontainerbtm" style="height: 0px;position: relative;"></div>
                     </div>
@@ -742,6 +748,7 @@
                             <div class="txtrightbtm txtcolorblack"><span>ONE Coaching</span></div>
                             <div class="txtrightwithoutbg txtcolorblack"><span>ONE University</span></div>
                             <div class="arc4" ></div>
+                            <div class="border-animation"></div>
                         </div>
                         <div class="corclecontainerbtm" style="height: 0px;position: relative;"></div>
                     </div>
@@ -775,6 +782,7 @@
                                     own business!</span>
                             </div>
                             <div class="arc4"></div>
+                            <div class="border-animation"></div>
                         </div>
                         <div class="corclecontainerbtm" style="height: 0px;position: relative;"></div>
                     </div>
@@ -797,9 +805,10 @@
                             </div>
                             <div class="txtrightwithoutbg txtcolorblack"><span>YOU are the brand!</span></div>
                             <div class="arc2"  style="z-index:9998"></div>
+                            <div class="border-animation"></div>
                         </div>
                         <div class="corclecontainerbtm" style="position:relative; z-index:9">
-                        {{ HTML::image('images/one_logo.png', 'a logo', array('style' => 'position:absolute; left:192px')) }}
+                        {{ HTML::image('images/one_logo.png', 'a logo', array('style' => 'position:absolute; left:190px')) }}
                         </div>
                     </div>
 
@@ -902,7 +911,7 @@
                 <div class="notyfymetxt"><a id="notifyMe" href="#" data-toggle="modal" data-target="notify-modal">NOTIFY ME WHEN YOU'RE IN MY AREA</a></div>
             </div>
         </section>
-        <section id="page5" class="scroll height_840 page blck_color" data-order="6">
+        <section id="page5" class="scroll page blck_color" data-order="6">
             <div id="LetsTalk">
                 <div id="Research" class="pageScrollSpeed scroll height_830 subPage">
                     <div class="contentContainer height_830 contact_page">
@@ -955,6 +964,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
+                    <a href="javascript:void(0)" class="btn-back-map-modal">« Back</a>
                     <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
                 </div>
                 <div class="modal-body modal-form" style="display: none">
@@ -966,11 +976,15 @@
                             <div class="col-sm-6">
                                 <input id="conversation_name" name="conversation_name" placeholder="Name" type="text" value="" data-toggle="tooltip" title="Please Fill Out This Field" data-trigger="manual" class="gold-tooltip">
                                 <input id="conversation_email" name="conversation_email" placeholder="Email" type="email" value="" data-toggle="tooltip" title="Please Fill Out This Field" data-trigger="manual" class="gold-tooltip">
-                                <input id="conversation_phone" name="conversation_phone" placeholder="Phone" type="tel" value="" data-toggle="tooltip" title="Please Fill Out This Field" data-trigger="manual" class="gold-tooltip">
+
+                                <input style="width: 28%; margin-right: 2px" id="conversation_phone_country" name="conversation_phone_country" placeholder="Country" type="tel" value="" data-toggle="tooltip" title="Please Fill Out This Field" data-trigger="manual" class="gold-tooltip">
+                                <input style="width: 20%; margin-right: 2px" id="conversation_phone_area" name="conversation_phone_area" placeholder="Area" type="tel" value="" data-toggle="tooltip" title="Please Fill Out This Field" data-trigger="manual" class="gold-tooltip">
+                                <input style="width: 50%" id="conversation_phone_number" name="conversation_phone_number" placeholder="Number" type="tel" value="" data-toggle="tooltip" title="Please Fill Out This Field" data-trigger="manual" class="gold-tooltip">
+
                                 <input type="hidden" id="man_email"/>
                             </div>
                             <div class="col-sm-6">
-                                <textarea id="conversation_message" name="conversation_message" placeholder="Message"  data-toggle="tooltip" title="Please Fill Out This Field" data-trigger="manual" class="gold-tooltip"></textarea>
+                                <textarea style="height: 185px" id="conversation_message" name="conversation_message" placeholder="Message"  data-toggle="tooltip" title="Please Fill Out This Field" data-trigger="manual" class="gold-tooltip"></textarea>
                             </div>
                         </div>
                         <p class="text-center">
@@ -982,7 +996,7 @@
                     <div class="row">
                         <div class="col-sm-4" style="width: auto">
                             <div class="image-wrap">
-                            {{ HTML::image('images/building.png', 'a building', array('class' => 'img-responsive office_img')) }}
+                            {{ HTML::image('images/bx1.png', 'a building', array('class' => 'img-responsive office_img')) }}
 
                             </div>
                         </div>
@@ -1058,7 +1072,7 @@
             <p>We have now received your email and we will get back to you as soon as possible</p>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-default" style="background: #f7c55a; border: medium none; color: #fff; font-family: museo_sans300; font-size: 20px; padding: 12px 20px; text-transform: uppercase; border-radius: 5px;" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-default" style="background: #f7c55a; border: medium none; color: #fff; font-family: museo_sans300; font-size: 16px; padding: 0px 20px; height: 44px; line-height: 44px ; text-transform: uppercase; border-radius: 5px;" data-dismiss="modal">Close</button>
           </div>
         </div><!-- /.modal-content -->
       </div><!-- /.modal-dialog -->
