@@ -5,7 +5,7 @@
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
 <script>
     var map;
-    var baseUrl = 'http://localhost:8000';
+    var baseUrl = '';
     var infowindow;
     var eviction_list = [];
     var offices;

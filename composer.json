@@ -11,7 +11,7 @@
 		"frozennode/administrator": "dev-master",
         "way/generators": "~2.0"
 	},
-    
+
 	"autoload": {
 		"classmap": [
 			"app/commands",
