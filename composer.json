@@ -8,11 +8,10 @@
 		"laravel/framework": "4.2.*",
         "barryvdh/laravel-ide-helper": "dev-master",
         "ceesvanegmond/minify": "2.0.*",
-		"frozennode/administrator": "dev-master"
-	},
-    "require-dev": {
+		"frozennode/administrator": "dev-master",
         "way/generators": "~2.0"
-    },
+	},
+    
 	"autoload": {
 		"classmap": [
 			"app/commands",
