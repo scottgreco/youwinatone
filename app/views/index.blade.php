@@ -179,6 +179,7 @@
                     infowindow.close();
 
                     $('#map-modal').modal('show');
+                    $(".btn-back-map-modal").hide();
 
                     var manager = office.manager;
 
@@ -280,8 +281,8 @@
                         <p style="margin-bottom: 2em">
                             <span>contribute to a vibrant culture</span><br />
                             EveryONE matters and adds something positive to our dynamic team.<br />
-                            We celebrate each other's successes by giving back, taking action, working<br />
-                            hard and having fun.
+                            We celebrate each other's successes by giving back, taking action, working
+                            hard and having fun.<br />
                         </p>
                         {{ HTML::image('images/txt-wheel.jpg', 'a wheel', array('class' => 'textwheel')) }}
                         <div class="content">
@@ -808,7 +809,7 @@
                             <div class="border-animation"></div>
                         </div>
                         <div class="corclecontainerbtm" style="position:relative; z-index:9">
-                        {{ HTML::image('images/one_logo.png', 'a logo', array('style' => 'position:absolute; left:190px')) }}
+                        {{ HTML::image('images/bx1.png', 'a logo', array('style' => 'position:absolute; left:190px; width: 150px; height: 150px')) }}
                         </div>
                     </div>
 
@@ -820,8 +821,8 @@
 
         <section id="page8" class="scroll pageHeight page white_color height_1695" data-order="5">
             <div id="Location">
-                <div id="Lab" class="pageScrollSpeed scroll height_710 subPage ">
-                    <div class="contentContainer height_710">
+                <div id="Lab" class="pageScrollSpeed scroll subPage ">
+                    <div class="contentContainer">
                         <div class="testimonials">
                             <p><span class="testimonials_header">Testimonials</span></p>
                             <div class="testimonialsmain">
@@ -964,7 +965,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <a href="javascript:void(0)" class="btn-back-map-modal">« Back</a>
+                    <a href="javascript:void(0)" class="btn-back-map-modal">« BACK</a>
                     <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
                 </div>
                 <div class="modal-body modal-form" style="display: none">
@@ -977,9 +978,8 @@
                                 <input id="conversation_name" name="conversation_name" placeholder="Name" type="text" value="" data-toggle="tooltip" title="Please Fill Out This Field" data-trigger="manual" class="gold-tooltip">
                                 <input id="conversation_email" name="conversation_email" placeholder="Email" type="email" value="" data-toggle="tooltip" title="Please Fill Out This Field" data-trigger="manual" class="gold-tooltip">
 
-                                <input style="width: 28%; margin-right: 2px" id="conversation_phone_country" name="conversation_phone_country" placeholder="Country" type="tel" value="" data-toggle="tooltip" title="Please Fill Out This Field" data-trigger="manual" class="gold-tooltip">
-                                <input style="width: 20%; margin-right: 2px" id="conversation_phone_area" name="conversation_phone_area" placeholder="Area" type="tel" value="" data-toggle="tooltip" title="Please Fill Out This Field" data-trigger="manual" class="gold-tooltip">
-                                <input style="width: 50%" id="conversation_phone_number" name="conversation_phone_number" placeholder="Number" type="tel" value="" data-toggle="tooltip" title="Please Fill Out This Field" data-trigger="manual" class="gold-tooltip">
+                                <input style="width: 30%; margin-right: 2px" id="conversation_phone_area" name="conversation_phone_area" placeholder="Area Code" type="tel" value="" data-toggle="tooltip" title="Please Fill Out This Field" data-trigger="manual" class="gold-tooltip">
+                                <input style="width: 69%" id="conversation_phone_number" name="conversation_phone_number" placeholder="Phone Number" type="tel" value="" data-toggle="tooltip" title="Please Fill Out This Field" data-trigger="manual" class="gold-tooltip">
 
                                 <input type="hidden" id="man_email"/>
                             </div>

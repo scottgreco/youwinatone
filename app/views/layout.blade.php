@@ -31,6 +31,7 @@
     {{ HTML::script('/js/js/jquery.bxslider.min.js') }}
     {{ HTML::script('/js/jquery.lazyload.min.js') }}
     {{ HTML::script('/js/jquery.smoothwheel.js') }}
+    {{ HTML::script('/js/jquery.mask.min.js') }}
     {{ HTML::script('/js/bootstrap.min.js') }}
     {{ HTML::script('/js/application.js') }}
 

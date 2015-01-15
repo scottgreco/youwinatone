@@ -6,6 +6,7 @@ String.prototype.capitalize = function () {
 $(document).ready(function () {
 
 
+    $('#conversation_phone_number').mask('000-0000');
 
     function centerModal() {
         $(this).css('display', 'block');
@@ -17,9 +18,9 @@ $(document).ready(function () {
 
     $(window).scroll(function(){
         var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-            shrinkOn = 900;
+            shrinkOn = 0;
         var nav = $("#nav");
-        console.log(distanceY);
+
         if (distanceY > shrinkOn) {
             nav.addClass("smaller");
         } else {
@@ -359,11 +360,7 @@ $(document).ready(function () {
                 addTweens(['.box7 .txtrightwithoutbg span'], 0);
             }
 
-
-            if (s <= 7300 + offset + offset2) {
-
-            }
-            if (s > 7900 + offset + offset2) {
+            if(s > 8100 + offset + offset2) {
                 var animate = $(".box7 .corclecontainerbtm").css("height") != "230px";
 
                 addTweensHeight(['.box7 .corclecontainerbtm'], "230px", 0.2);
@@ -383,45 +380,52 @@ $(document).ready(function () {
                     }, 200);
                 }
             }
-            else if (s > 7800 + offset + offset2) {
+            else if (s > 8000 + offset + offset2) {
                 var wow = $(".box7 .corclecontainerbtm img");
                 TweenMax.to(wow, 0.2, { css: { width: "150px" }, ease: Quad.easeOutBounce });
                 TweenMax.to(wow, 0.2, { css: { height: "150px" }, ease: Quad.easeOutBounce });
                 TweenMax.to(wow, 0.2, { css: { left: "190px" }, ease: Quad.easeOutBounce });
                 addTweensHeight(['.box7 .corclecontainerbtm'], "150px", 0.2);
             }
-            else if (s > 7700 + offset + offset2) {
+            else if (s > 7900 + offset + offset2) {
+
                 addTweensHeight(['.box7 .corclecontainerbtm'], "100px", 0.2);
             }
-            else if (s > 7600 + offset + offset2) {
+            else if (s > 7800 + offset + offset2) {
                 addTweensHeight(['.box7 .corclecontainerbtm'], "50px", 0.2);
+            }
+            else if (s > 7700 + offset + offset2) {
+                addTweensHeight(['.box7 .corclecontainerbtm'], "0px", 0.2);
                 addTweensHeight(['.box7 .border-animation'], "386px", 0.2);
             }
-            else if (s > 7500 + offset + offset2) {
-                addTweensHeight(['.box7 .corclecontainerbtm'], "0px", 0.2);
+            else if (s > 7600 + offset + offset2) {
+                addTweens(['.box7 .txtrightwithoutbg span'], 1, 1.2);
                 addTweensHeight(['.box7 .border-animation'], "290px", 0.2);
             }
-            else if (s > 7400 + offset + offset2) {
-                addTweens(['.box7 .txtrightwithoutbg span'], 1, 1.2);
+            else if (s > 7500 + offset + offset2) {
                 addTweensHeight(['.box7 .border-animation'], "208px", 0.2);
-            }
-            else if (s > 7300 + offset + offset2) {
                 addTweens(['.box7 .txtrightwithoutbg span'], 0, 0.5);
                 addTweensHeight(['.box7 .border-animation'], "130px", 0.2);
             }
-            else if (s > 7200 + offset + offset2) {
-                addTweensHeight(['.box6 .corclecontainerbtm'], "358px", 0.2);
-                addTweens(['.box7 .corclecontainerbtm'], 1);
+            else if (s > 7400 + offset + offset2) {
                 addTweens(['.box7 .boxheading', '.box7 .dottedcircle'], 1);
                 addTweensHeight(['.box7 .border-animation'], "50px", 0.2);
             }
-            else if (s > 7100 + offset + offset2) {
-                addTweens(['.box7 .boxheading', '.box7 .dottedcircle'], 0);
-                addTweensHeight(['.box6 .corclecontainerbtm'], "211px", 0.2);
+            else if (s > 7300 + offset + offset2) {
+                addTweensHeight(['.box6 .corclecontainerbtm'], "358px", 0.2);
                 addTweensHeight(['.box7 .border-animation'], "0px", 0.2);
             }
+            else if (s > 7200 + offset + offset2) {
+                addTweensHeight(['.box7 .corclecontainerbtm'], "0px", 0.2);
+                addTweensHeight(['.box6 .corclecontainerbtm'], "250px", 0.2);
+                addTweens(['.box7 .corclecontainerbtm'], 1);
+            }
+            else if (s > 7100 + offset + offset2) {
+                addTweens(['.box7 .boxheading', '.box7 .dottedcircle'], 0);
+                addTweensHeight(['.box6 .corclecontainerbtm'], "128px", 0.2);
+            }
             else if (s > 7000 + offset + offset2) {
-                addTweensHeight(['.box6 .corclecontainerbtm'], "75px", 0.2);
+                addTweensHeight(['.box6 .corclecontainerbtm'], "0px", 0.2);
                 addTweens(['.box6 .txtrightwithoutbg span'], 1, 1.2);
                 addTweensHeight(['.box6 .border-animation'], "386px", 0.2);
             }
@@ -458,7 +462,7 @@ $(document).ready(function () {
             else if (s > 6300 + offset + offset2) {
                 addTweens(['.box5 .txtrightwithoutbg span'], 1, 1.2);
                 addTweensHeight(['.box5 .border-animation'], "387px", 0.2);
-                addTweensHeight(['.box5 .corclecontainerbtm'], "50px", 0.2);
+                addTweensHeight(['.box5 .corclecontainerbtm'], "0px", 0.2);
             }
             else if (s > 6200 + offset + offset2) {
                 addTweens(['.box5 .txtrightwithoutbg span'], 0, 0.5);
@@ -490,11 +494,11 @@ $(document).ready(function () {
                 addTweensHeight(['.box4 .corclecontainerbtm'], "200px", 0.2);
             }
             else if (s > 5600 + offset + offset2) {
-                addTweensHeight(['.box4 .corclecontainerbtm'], "128px", 0.2);
+                addTweensHeight(['.box4 .corclecontainerbtm'], "100px", 0.2);
             }
             else if (s > 5500 + offset + offset2) {
+                addTweensHeight(['.box4 .corclecontainerbtm'], "0px", 0.2);
                 addTweens(['.box4 .txtleftbtm', '.box4 .txtleftbtm span', '.box4 .txtrightbtm', '.box4 .txtrightbtm span'], 1, 1.2);
-                addTweensHeight(['.box4 .corclecontainerbtm'], "50px", 0.2);
                 addTweensHeight(['.box4 .border-animation'], "388", 0.2);
             }
             else if (s > 5400 + offset + offset2) {
@@ -512,11 +516,13 @@ $(document).ready(function () {
                 addTweens(['.box4 .txtleftwithoutbg span'], 0, 0.5);
                 addTweens(['.box4 .boxheading', '.box4 .dottedcircle'], 1);
                 addTweensHeight(['.box4 .border-animation'], "75px", 0.2);
+            }
+            else if (s > 5100 + offset) {
                 addTweensHeight(['.box3 .corclecontainerbtm'], "320px", 0.2);
             }
             else if (s > 5000 + offset) {
                 addTweens(['.box4 .boxheading', '.box4 .dottedcircle'], 0);
-                addTweensHeight(['.box3 .corclecontainerbtm'], "120px", 0.2);
+                addTweensHeight(['.box3 .corclecontainerbtm'], "175px", 0.2);
                 addTweensHeight(['.box4 .border-animation'], "0px", 0.2);
             }
             else if (s > 4900 + offset) {
@@ -1012,7 +1018,6 @@ $(document).ready(function () {
         var name = $("#conversation_name");
         var email = $("#conversation_email");
 
-        var phoneCountry = $("#conversation_phone_country");
         var phoneArea = $("#conversation_phone_area");
         var phoneNumber = $("#conversation_phone_number");
 
@@ -1026,11 +1031,6 @@ $(document).ready(function () {
         if (email.val().length == 0) {
             isValid = false;
             email.tooltip('show');
-        }
-
-        if (phoneCountry.val().length == 0) {
-            isValid = false;
-            phoneCountry.tooltip('show');
         }
 
         if (phoneArea.val().length == 0) {
@@ -1070,7 +1070,7 @@ $(document).ready(function () {
         $.post(baseUrl + "/conversation", {
             name: name.val(),
             email: email.val(),
-            phone: phoneCountry.val() + "-" + phoneArea.val() + "-" + phoneNumber.val(),
+            phone: phoneArea.val() + " " + phoneNumber.val(),
             message: message.val(),
             emailTo: $("#man_email").val()
         }, function (result) {
