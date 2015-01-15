@@ -446,18 +446,17 @@ $(document).ready(function () {
                 addTweens(['.box6 .boxheading', '.box6 .boxheading span'], 1);
             }
             else if (s > 6600 + offset + offset2) {
-                addTweensHeight(['.box5 .corclecontainerbtm'], "323px", 0.2);
                 addTweens(['.box6 .boxheading', '.box6 .boxheading span'], 0);
                 addTweens(['.box6 .dottedcircle'], 1);
                 addTweensHeight(['.box6 .border-animation'], "75px", 0.2);
             }
             else if (s > 6500 + offset + offset2) {
                 addTweens(['.box6 .dottedcircle'], 0);
-                addTweensHeight(['.box5 .corclecontainerbtm'], "256px", 0.2);
+                addTweensHeight(['.box5 .corclecontainerbtm'], "323px", 0.2);
                 addTweensHeight(['.box6 .border-animation'], "0px", 0.2);
             }
             else if (s > 6400 + offset + offset2) {
-                addTweensHeight(['.box5 .corclecontainerbtm'], "128px", 0.2);
+                addTweensHeight(['.box5 .corclecontainerbtm'], "160px", 0.2);
             }
             else if (s > 6300 + offset + offset2) {
                 addTweens(['.box5 .txtrightwithoutbg span'], 1, 1.2);
@@ -543,50 +542,47 @@ $(document).ready(function () {
             }
             else if (s > 4600 + offset) {
                 addTweens(['.box3 .txtrighttop', '.box3 .txtrighttop span'], 0, 0.5);
-                addTweensHeight(['.box2 .corclecontainerbtm'], "320px", 0.2);
                 addTweens(['.box3 .boxheading', '.box3 .dottedcircle'], 1);
                 addTweensHeight(['.box3 .border-animation'], "50px", 0.2);
             }
             else if (s > 4500 + offset) {
-                addTweensHeight(['.box2 .corclecontainerbtm'], "240px", 0.2);
+                addTweensHeight(['.box2 .corclecontainerbtm'], "320px", 0.2);
                 addTweens(['.box3 .boxheading', '.box3 .dottedcircle'], 0);
                 addTweensHeight(['.box3 .border-animation'], "0px", 0.2);
             }
             else if (s > 4400 + offset) {
-
-                addTweensHeight(['.box2 .corclecontainerbtm'], "120px", 0.2);
+                addTweensHeight(['.box2 .corclecontainerbtm'], "150px", 0.2);
             }
             else if (s > 4300 + offset) {
-
-            }
-            else if (s > 4200 + offset) {
                 addTweens(['.box2 .txtleftbtm', '.box2 .txtleftbtm span'], 1);
                 addTweensHeight(['.box2 .border-animation'], "384px", 0.2);
                 addTweensHeight(['.box2 .corclecontainerbtm'], "0px", 0.2);
             }
-            else if (s > 4100 + offset) {
+            else if (s > 4200 + offset) {
                 addTweens(['.box2 .txtleftbtm', '.box2 .txtleftbtm span'], 0);
                 addTweensHeight(['.box2 .border-animation'], "311px", 0.2);
             }
-            else if (s > 4000 + offset) {
+            else if (s > 4100 + offset) {
                 addTweens(['.box2 .txtrightwithoutbg span'], 1);
                 addTweensHeight(['.box2 .border-animation'], "210px", 0.2);
             }
-            else if (s > 3900 + offset) {
+            else if (s > 4000 + offset) {
                 addTweens(['.box2 .txtleft', '.box2 .txtleft span'], 1);
                 addTweensHeight(['.box2 .border-animation'], "158px", 0.2);
                 addTweens(['.box2 .txtrightwithoutbg span'], 0);
             }
-            else if (s > 3800 + offset) {
+            else if (s > 3900 + offset) {
                 addTweens(['.box2 .dottedcircle', '.box2 .boxheading'], 1);
-                addTweensHeight(['.box2 .corclecontainerbtm'], "0px", 0.2);
                 addTweensHeight(['.box2 .border-animation'], "50px", 0.2);
+            }
+            else if (s > 3800 + offset) {
+                addTweensHeight(['.box2 .border-animation'], "0px", 0.2);
+                addTweensHeight(['.box2 .corclecontainerbtm'], "0px", 0.2);
                 addTweens(['.box2 .txtleft', '.box2 .txtleft span'], 0);
                 addTweensHeight(['.box1 .corclecontainerbtm'], "305px", 0.2);
             }
             else if (s > 3700 + offset) {
                 addTweens(['.box2 .dottedcircle', '.box2 .boxheading'], 0);
-                addTweensHeight(['.box2 .border-animation'], "0px", 0.2);
                 addTweensHeight(['.box1 .corclecontainerbtm'], "175px", 0.2);
             }
             else if (s > 3600 + offset) {
