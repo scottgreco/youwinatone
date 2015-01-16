@@ -220,21 +220,23 @@ body{height:auto !important;}
 .nbs-flexisel-nav-left {    left: -65px;    background: url(../images/arrow_left.png) no-repeat;}
 .nbs-flexisel-nav-right {    right: -60px;    background: url(../images/arrow_right.png) no-repeat;}
 
-#Lab { 	background-image: url(../images/bg-testimonials.jpg);	float: left;	width: 100%;	background-size: 113%; background-position:left top; background-attachment:scroll !important; text-align:center;}
-#Lab  .contentContainer{text-align:center;}
-#Lab  .contentContainer p{     color: #5c5c5c;    font-family: museo_sans100;    font-size: 21px;    line-height: 35px;    text-align: center;    width: 100%;}
-#Lab  .contentContainer p span{font-size: 51px;  line-height:50px; }
+#Lab { 	background-image: url(../images/bg-testimonials.jpg);	float: left;	width: 100%;	background-size: cover; background-position:left top; background-attachment:scroll !important; text-align:center; padding-bottom: 50px}
+#Lab  .contentContainer{text-align:center; min-height: 0px !important;}
+#Locations  .contentContainer{text-align:center; min-height: 0px !important; padding: 40px 0}
+#Locations  .contentContainer p{     color: #5c5c5c;    font-family: museo_sans100;    font-size: 21px;    line-height: 35px;    text-align: center;    width: 100%;}
+#Locations  .contentContainer p span{font-size: 51px;  line-height:50px; }
 .bx-wrapper {	position: relative;	margin: 0 0 150px;	padding: 0;	 width:770px; margin-left: 215px;  }
 .bx-wrapper .bx-viewport {margin-top:30px; width:100%	}
 .bx-wrapper .bx-viewport li{color:#fff; width:100%; text-align:center; font-family: museo_sans300; font-size:24px;}
 #Lab  .contentContainer .bx-wrapper .bx-viewport li p{color:#fff; width:100%; text-align:center; font-family: museo_sans300; font-size:18px;}
 .bx-controls-direction a{ background: #fff;    border-radius: 100px;    display: inline-block;    height: 10px;    margin: 0 5px;    overflow: hidden;    text-indent: -9999px;    width: 10px;}
 
-#Lab  form{width:100%; text-align:center; font-family: museo_sans300;}
-#Lab  form .selectbox{ background-image: url("../images/select_Arrow.png");  overflow:hidden;   background-position: right center;    background-repeat: no-repeat;    border: 1px solid #f2f2f3;    border-radius: 5px;    box-shadow: 0 0 1px 0 #d0d0d0 inset;    display: inline-block;    height: 44px;    margin: 0 10px;    padding: 0;    width: 270px;}
-#Lab  form select{ line-height: 20px;font-size: 18px; background: none;    border: medium none;    color: #5c5c5c;    padding: 10px 8px;    width: 300px; font-family: museo_sans300; -webkit-appearance: none;}
-#Lab  form  input[type="submit"]{background:#f8c55a;    border: medium none;    color: #fff;    font-family: museo_sans300;    font-size: 16px;    padding: 12px 37px;}
-#Lab  form .submit{ border-radius: 5px; overflow:hidden;   display: inline-block;    height: 44px;    margin: 0 10px;    padding: 0;    width: 173px;}
+#Locations {clear: both; }
+#Locations  form{width:100%; text-align:center; font-family: museo_sans300;}
+#Locations  form .selectbox{ background-image: url("../images/select_Arrow.png");  overflow:hidden;   background-position: right center;    background-repeat: no-repeat;    border: 1px solid #f2f2f3;    border-radius: 5px;    box-shadow: 0 0 1px 0 #d0d0d0 inset;    display: inline-block;    height: 44px;    margin: 0 10px;    padding: 0;    width: 270px;}
+#Locations  form select{ line-height: 20px;font-size: 18px; background: none;    border: medium none;    color: #5c5c5c;    padding: 10px 8px;    width: 300px; font-family: museo_sans300; -webkit-appearance: none;}
+#Locations  form  input[type="submit"]{background:#f8c55a;    border: medium none;    color: #fff;    font-family: museo_sans300;    font-size: 16px;    padding: 12px 37px;}
+#Locations  form .submit{ border-radius: 5px; overflow:hidden;   display: inline-block;    height: 44px;    margin: 0 10px;    padding: 0;    width: 173px;}
 
 .testimonials{width:880px ; margin:0px auto;}
 .testimonialsmain{  border-left: 2px solid #fff;    box-sizing: border-box;    float: left;    height: 100%;    margin-bottom: 20px;    padding:0px 5px 0px 17px;    width: 49%; }
@@ -258,14 +260,14 @@ body{height:auto !important;}
 .mapiframe{background:#fff;    float: left;    height: 560px;    margin: 20px 0 0 0;    padding: 0;       width: 100%;     }
 
 
-.notyfyme{width:100%;  text-align:center; margin:0px; padding:0px; height:auto;}
+.notyfyme{width:100%;  text-align:center; margin:0px; padding:0px; height:auto; clear: both;}
 .notyfymetxt{display:inline-block; line-height:44px; vertical-align:middle; color: #5c5c5c;    font-family: museo_sans100;    font-size: 21px;     padding: 35px 0;}
 .notyfymetxt a{display:inline-block; height:44px; background:#f8c55a; color: #fff;    font-family: museo_sans300;    font-size: 16px;  line-height:44px;  padding: 0px 37px; border-radius: 5px; text-decoration:none; margin:0px 20px;letter-spacing: 1px;}
 
 .bx-controls-direction{display:none;}
 
 
-#Research{	background-image: url(../images/contactbg.png);	float: left;	width: 100%;	background-size: auto 101%; background-position-x: 44%; background-position-y: -6px; background-attachment:scroll !important; text-align:center;}
+#Research{	background-image: url(../images/contactbg.png);	float: left;	width: 100%;	background-size: cover; background-position-x: 44%; background-position-y: 0px; background-attachment:scroll !important; text-align:center;}
 #Research  .contentContainer p{  color: #fff;    font-family: museo_sans100;    font-size: 21px;  line-height: 35px;   margin-top: 10px;   text-align: center;   width: 100%;}
 #Research  .contentContainer p span{font-size: 45px;  line-height:50px; letter-spacing: 2px }
 #Research  .contentContainer p img{display:inline-block; margin:0 9px -4px 0;}
@@ -449,7 +451,7 @@ ul#social a:hover {	color:#fff;}
 
 
 
-#social .sumit   { left: -346px;    top: -227px; width:158px; height:56px; /*background-image:url(summit.png); background-repeat:no-repeat;*/ }
+#social .sumit   { left: -357px;    top: -227px; width:158px; height:56px; /*background-image:url(summit.png); background-repeat:no-repeat;*/ }
 #social .sumit:hover   { /*background-image:url(summit_h.png);*/}
 
 
@@ -854,7 +856,7 @@ ul#social a:hover {	color:#fff;}
 .description .line-container{ position:absolute;}
 
 .description1 .line-container {width: 50px; top:66px;
-    right:-11px;
+    right:-12px;
     -webkit-transform: rotate(221deg);
     -moz-transform: rotate(221deg);
     -ms-transform: rotate(221deg);
@@ -879,7 +881,7 @@ ul#social a:hover {	color:#fff;}
 .description.description2 h4{ text-align:left !important; padding:0px 0px 0px 0px;}
 .description.description2 p{ text-align:right !important; margin:-39px 80px 0px 0px !important;}
 
-.description9 .line-container {width:38px; top:48px;	right:214px;
+.description9 .line-container {width:38px; top:49px;	right:214px;
     -webkit-transform: rotate(-42deg);
     -moz-transform: rotate(-42deg);
     -ms-transform: rotate(-42deg);
@@ -908,7 +910,7 @@ ul#social a:hover {	color:#fff;}
 .description.description3 p{ text-align:right !important; margin:-96px 23px 0px 0px !important;}
 
 
-.description4 .line-container {width:44px; top:54px;	right:-34px;
+.description4 .line-container {width:44px; top:55px;	right:-34px;
     -webkit-transform: rotate(238deg);
     -moz-transform: rotate(238deg);
     -ms-transform: rotate(238deg);
@@ -969,7 +971,7 @@ ul#social a:hover {	color:#fff;}
 
 
 .description8 .line-container {width:40px; top:48px;	left:-36px;
-    -webkit-transform: rotate(116deg);
+    -webkit-transform: rotate(-37deg);
     -moz-transform: rotate(-37deg);
     -ms-transform: rotate(-37deg);
     -o-transform: rotate(-37deg);
@@ -1199,7 +1201,7 @@ footer > div.footer ul, div.socialmedia { margin-bottom: 0px !important; margin-
 footer div.socialmedia a {
     opacity: 0.72
 }
-.frm-location { padding-top: 60px; margin-top: 15px;}
+.frm-location { margin-top: 15px;}
 #LetsTalk { padding-top: 25px; }
 
 #ie10_image { display: none;}
@@ -1247,6 +1249,10 @@ footer div.socialmedia a {
     .content{    width: 955px;}    
     #navLinks a{ padding-left: 39px;}
         
+}
+
+@media (max-width: 770px ){
+    .notyfyme {padding-bottom: 20px;}
 }
 
 @media only screen and (min-width: 769px) and (max-width: 959px) {
@@ -1306,7 +1312,8 @@ footer div.socialmedia a {
 
     .box7  .txtrightwithoutbg  .dotpulse_container{    left: -35px;   top: 1px;}
     .mapiframe{height:380px;}
-    .notyfymetxt{padding:30px 0 0;}
+    .notyfymetxt{padding:0;}
+
     .height_1695 {    height: 1520px !important;}
     #Research .contentContainer p{margin-bottom:20px;}
     #Research .contentContainer p .phone{
@@ -1355,8 +1362,40 @@ footer div.socialmedia a {
 }
 
 @media (max-width: 768px)
-{    
-
+{
+    .box1 .txtlefttop,
+    .box1 .arc,
+    .box1 .txtlefttop span,
+    .box1 .txtrightwithoutbg span,
+    .box1 .txtleftwithoutbg span,
+    .box2 .dottedcircle,
+    .box2 .boxheading,
+    .box2 .arc2,
+    .box2 .txtleft,
+    .box2 .txtleft span,
+    .box2 .txtrightwithoutbg span,
+    .box2 .txtleftbtm, .box2 .txtleftbtm span,
+    .box3 .dottedcircle, .box3 .boxheading,
+    .box3 .arc3,
+    .box3 .txtrighttop,
+    .box3 .txtrighttop span,
+    .box3 .txtrightbtm,
+    .box3 .txtleftwithoutbg span,
+    .box4 .boxheading, .box4 .arc3, .box4 .dottedcircle,
+    .box4 .txtleftwithoutbg span,
+    .box4 .txtleftbtm, .box4 .txtleftbtm span, .box4 .txtrightbtm, .box4 .txtrightbtm span,
+    .box5 .dottedcircle, .box5 .boxheading, .box5 .arc4,
+    .box5 .txtrightbtm, .box5 .txtrightbtm span, .box5 .txtrightwithoutbg span,
+    .box6 .boxheading, .box6 .arc4, .box6 .dottedcircle,
+    .box6 .boxheading span,
+    .box6 .txtleftwithoutbg span,
+    .box6 .txtleftbtm, .box6 .txtleftbtm span, .box6 .txtrightwithoutbg span,
+    .box7 .boxheading, .box7 .dottedcircle, .box7 .arc2,
+    .box7 .txtrightwithoutbg span
+    {
+        opacity: 1 !important;
+    }
+    
     .subPage
     {   
         background-attachment: scroll;
@@ -1491,10 +1530,10 @@ footer div.socialmedia a {
 
     #Lab .contentContainer { padding-top: 0px;}
     
-    #Lab .contentContainer p{ font-size: 18px; line-height: 28px;padding-bottom: 0px !important;margin-top: 0px !important;}         
-    #Lab .contentContainer p span {    font-size: 35px !important;    line-height: 40px;}
+    #Locations .contentContainer p{ font-size: 18px; line-height: 28px;padding-bottom: 0px !important;margin-top: 0px !important;}
+    #Locations .contentContainer p span {    font-size: 35px !important;    line-height: 40px;}
 
-    #Lab form .selectbox {margin-bottom: 10px !important;}
+    #Locations form .selectbox {margin-bottom: 10px !important;}
     .textwheel{}
     .content{
         width: 100%;
@@ -1618,7 +1657,8 @@ footer div.socialmedia a {
     #Campaign .contentContainer .box span.yellow_sign {font-size: 28px}
     #Campaign .contentContainer .box span.small_part {font-size: 20px}
     .nbs-flexisel-container{ margin-top: 33px; width: 86%}
-    #Lab{background-size: auto 78%; background-position: center top;}
+    #Lab{ background-position: center top; padding-bottom: 0px;}
+    #Locations .contentContainer { padding-top: 10px; }
     .bx-wrapper{width:100%; margin:0 0 65px;}
     .bx-wrapper .bx-viewport li{font-sizE:18px;}
     .height_710{height: auto !important;}
@@ -1747,13 +1787,13 @@ footer div.socialmedia a {
         left: -17px;
     }
 
-    #Lab .contentContainer .testimonials p span,
+    #Locations .contentContainer .testimonials p span,
     #Research .contentContainer p span
     {
         font-size: 30px;
     }
 
-    #Lab form select{
+    #Locations form select{
         width: 100%;
     }
 

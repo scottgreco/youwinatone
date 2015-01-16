@@ -819,7 +819,7 @@
 
 
 
-        <section id="page8" class="scroll pageHeight page white_color height_1695" data-order="5">
+        <section id="page8" class="scroll page white_color" data-order="5">
             <div id="Location">
                 <div id="Lab" class="pageScrollSpeed scroll subPage ">
                     <div class="contentContainer">
@@ -876,36 +876,38 @@
 
                         </div>
                         <div style="clear:both"></div>
-                        <div id="Locations" class="frm-location">
-                        <p>
-                            <span>locations</span><br />
-                            It's all about location, and with our 50+ beautiful offices, we bet we've got one near you!
-                            <br />
-                            Search our offices and connect with the broker in your area.
-                        </p>
-                            <form accept-charset="UTF-8" data-remote="true" id="location_form" method="post">
-                                <div style="margin: 0; padding: 0; display: inline">
-                                    <input name="utf8" type="hidden" value="&#x2713;" />
-                                </div>
-                                <div class="selectbox">
-                                    <select id="state" name="state">
-                                        <option value="">Select a State</option>
-                                    </select>
-                                </div>
-                                <div class="selectbox">
-                                    <select id="city" name="city">
-                                        <option value="">Select a City</option>
-                                    </select>
-                                </div>
-                                <div class="submit">
-                                    <input class="submit_btn" disabled="disabled" name="submit" type="submit" value="OFFICE SEARCH" />
-                                </div>
-                            </form>
-                            </div>
+
 
                     </div>
                 </div>
             </div>
+            <div id="Locations" class="frm-location">
+            <div class="contentContainer">
+            <p>
+                <span>locations</span><br />
+                It's all about location, and with our 50+ beautiful offices, we bet we've got one near you!
+                <br />
+                Search our offices and connect with the broker in your area.
+            </p>
+                <form accept-charset="UTF-8" data-remote="true" id="location_form" method="post">
+                    <div style="margin: 0; padding: 0; display: inline">
+                        <input name="utf8" type="hidden" value="&#x2713;" />
+                    </div>
+                    <div class="selectbox">
+                        <select id="state" name="state">
+                            <option value="">Select a State</option>
+                        </select>
+                    </div>
+                    <div class="selectbox">
+                        <select id="city" name="city">
+                            <option value="">Select a City</option>
+                        </select>
+                    </div>
+                    <div class="submit">
+                        <input class="submit_btn" disabled="disabled" name="submit" type="submit" value="OFFICE SEARCH" />
+                    </div>
+                </form></div>
+                </div>
             <div id="mappy" class="mapiframe"></div>
             <div class="notyfyme">
                 <div class="notyfymetxt">If we don't, chances are one is coming soon.</div>
