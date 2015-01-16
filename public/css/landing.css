@@ -11,7 +11,6 @@ body { color: #000; font-size: 14px; line-height: 18px; background-color:  #fff;
 img{border:none;}
 body{height:auto !important;}
 
-
 @font-face {    font-family: 'afta_serifregular';    src: url('../fonts/aftaserifthin-regular.eot');    src: url('../fonts/aftaserifthin-regular.eot?#iefix') format('embedded-opentype'),         url('../fonts/aftaserifthin-regular.woff') format('woff'),         url('../fonts/aftaserifthin-regular.ttf') format('truetype'),         url('../fonts/aftaserifthin-regular.svg#afta_serifregular') format('svg');    font-weight: normal;    font-style: normal;}
 @font-face {    font-family: 'porn_star_academyregular';    src: url('../fonts/pornsa__.eot');    src: url('../fonts/pornsa__.eot?#iefix') format('embedded-opentype'),         url('../fonts/pornsa__.woff') format('woff'),         url('../fonts/pornsa__.ttf') format('truetype'),         url('../fonts/pornsa__.svg#porn_star_academyregular') format('svg');    font-weight: normal;    font-style: normal;}
 @font-face {    font-family: 'din-mediumregular';    src: url('../fonts/dinm____.eot');    src: url('../fonts/dinm____.eot?#iefix') format('embedded-opentype'),         url('../fonts/dinm____.woff') format('woff'),         url('../fonts/dinm____.ttf') format('truetype'),         url('../fonts/dinm____.svg#din-mediumregular') format('svg');    font-weight: normal;    font-style: normal;}
@@ -1842,8 +1841,6 @@ footer div.socialmedia a {
         width: 100%;
     }
 
-    #map-modal {margin-top:30px !important;}
-
     #notify-modal .modal-header {
         padding: 6px;
     }
@@ -1902,6 +1899,7 @@ footer div.socialmedia a {
     #Campaign .contentContainer .box{
         width: 70px;
         font-size: 10px;
+        margin: 19px 0 14px;
     }
     #Campaign .contentContainer .box span.small_part{
         font-size: 12px;
@@ -2168,6 +2166,13 @@ footer div.socialmedia a {
     }
 }
 
+
+@media (max-width : 480px) {
+    #Campaign .contentContainer .box {
+        width: 70px;
+    }
+}
+
 @media only screen 
     and (min-device-width : 375px) 
     and (max-device-width : 667px) 
@@ -2187,10 +2192,6 @@ footer div.socialmedia a {
         line-height: 20px;
     }
 
-    #Campaign .contentContainer .box {
-        width: 60px;
-        font-size: 11px;
-    }
 }
 
 

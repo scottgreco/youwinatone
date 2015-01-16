@@ -8,7 +8,7 @@
     
 
 {{ HTML::style('/css/bootstrap.css') }}
-{{ HTML::style('/css/landing.css') }}
+{{ HTML::style('/css/landing.css?v=1.0') }}
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 

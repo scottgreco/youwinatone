@@ -961,7 +961,7 @@
 
 
 
-    <div class="modal fade" id="map-modal" tabindex="-1" role="dialog" aria-labelledby="map-model-label" aria-hidden="true">
+    <div class="modal fade" id="map-modal">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
