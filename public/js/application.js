@@ -17,15 +17,17 @@ $(document).ready(function () {
     }
 
     $(window).scroll(function(){
-        var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-            shrinkOn = 0;
-        var nav = $("#nav");
+        if ($(window).width() > 770) {
+            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                shrinkOn = 0;
+            var nav = $("#nav");
 
-        if (distanceY > shrinkOn) {
-            nav.addClass("smaller");
-        } else {
-            if (nav.hasClass("smaller")) {
-                nav.removeClass("smaller");
+            if (distanceY > shrinkOn) {
+                nav.addClass("smaller");
+            } else {
+                if (nav.hasClass("smaller")) {
+                    nav.removeClass("smaller");
+                }
             }
         }
     });
@@ -363,7 +365,16 @@ $(document).ready(function () {
             if(s > 8100 + offset + offset2) {
                 var animate = $(".box7 .corclecontainerbtm").css("height") != "230px";
 
-                addTweensHeight(['.box7 .corclecontainerbtm'], "230px", 0.2);
+                var is_firefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
+                var delayLastAnimation = 0.2
+                var timeoutLastAnimation = 200;
+                if(is_firefox){
+                    delayLastAnimation = 0.1;
+                    timeoutLastAnimation = 250;
+                }
+
+
+                addTweensHeight(['.box7 .corclecontainerbtm'], "230px", delayLastAnimation);
                 var wow = $(".box7 .corclecontainerbtm img");
 
                 if(animate) {
@@ -376,8 +387,8 @@ $(document).ready(function () {
                             TweenMax.to(wow, 0.2, {css: {height: "150px"}, ease: Quad.easeOutBounce})
                             TweenMax.to(wow, 0.2, {css: {left: "190px"}, ease: Quad.easeOutBounce});
                             ;
-                        }, 200);
-                    }, 200);
+                        }, timeoutLastAnimation);
+                    }, timeoutLastAnimation);
                 }
             }
             else if (s > 8000 + offset + offset2) {
