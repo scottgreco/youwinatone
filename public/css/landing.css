@@ -588,11 +588,8 @@ ul#social a:hover {	color:#fff;}
 .box6 .corclecontainer .innercircle{background-image:url(../images/bx7.png); }
 .box7 .corclecontainerbtm { height: 370px; }
 .box7 .corclecontainerbtm img { margin-top: 229px;
-    image-rendering: -moz-crisp-edges;         /* Firefox */
-    image-rendering:   -o-crisp-edges;         /* Opera */
-    image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
-    image-rendering: crisp-edges;
-    -ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
+    image-rendering: -webkit-optimize-quality;
+    -webkit-transform: scale3d(1,1,1)
 }
 .corclecontainer .pulses{ border: 3px solid #FFF;  display:inline-block ;  border-radius: 30px;    box-shadow: 0 0 5px #FFF;    height: 62px;    margin: 116px 0 0 117px;    position: absolute;    transform: scale(0);  width: 62px;    z-index: 100000;		-moz-transform:scale(0);	-moz-animation:2.1s ease 0.4s normal none infinite pulse; animation:2.1s ease 0.4s normal none infinite pulse;		-webkit-transform:scale(0);	-webkit-animation:2.1s ease 0.4s normal none infinite pulse;}
 
