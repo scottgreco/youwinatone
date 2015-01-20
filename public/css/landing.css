@@ -289,7 +289,29 @@ body{height:auto !important;}
 #modal-email  form  input[type="submit"]
 {background:#f8c55a;    border: medium none;    color: #fff;    font-family: museo_sans300;    font-size: 20px;    padding: 12px 20px; text-transform:uppercase; border-radius:5px;}
 #modal-email .modal-header {text-align: center}
-#modal-email .modal-header h4{font-size: 1.4em}
+#modal-email .modal-header h4{font-size: 1.4em; color:white; text-transform: uppercase}
+
+#modal-email .modal-content {
+    background:#1F191A;
+}
+
+#modal-email .modal-body {
+    color:#f8c55a;
+    text-transform: uppercase;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-left: 70px;
+    padding-right: 70px;
+    border-top: 2px solid #f8c55a;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+}
+
+#modal-email .modal-footer {
+    padding-top: 0px;
+    text-align: center !important;
+}
 
 #Research  form {
     margin-top: 150px;
@@ -1026,7 +1048,7 @@ ul#social a:hover {	color:#fff;}
 }
 
 .description.description10 h4{ text-align:right; padding:0px 30px 0px 30px;}
-.description.description10 p{ text-align:left !important; margin:-77px 30px 0px 10px !important;}
+.description.description10 p{ text-align:left !important; margin:-77px 0px 0px 10px !important;}
 
 
 
@@ -1078,7 +1100,7 @@ ul#social a:hover {	color:#fff;}
 .description7 {left: 747px; top: 62px;  position:absolute; width:250px;}
 .description8 {left: 845px;  top: 195px;  position:absolute; width:265px;}
 .description9 {left: 868px;   top: 365px; position:absolute; width:220px; }
-.description10 {left: 818px; top: 510px;  position:absolute; width:310px;}
+.description10 {left: 818px; top: 510px;  position:absolute; width:255px;}
 .description11{left: 685px;   top: 623px; position:absolute; width:240px;}
 
 
