@@ -288,17 +288,17 @@
                         <div class="content">
                             <div class="ID-Image">
                                 <ul id="follow">
-                                    <li class="line1"><span id="layerBall" class="layerBall ball" data-id="0">LINKED IN</span><span id="layerPulse" class="pulse"></span></li>
-                                    <li class="line2"><span id="layerBall1" class="layerBall ball1" data-id="1">FOORST</span><span id="layerPulse1" class="pulse1"></span></li>
-                                    <li class="line3"><span id="layerBall2" class="layerBall ball2" data-id="2">TWITTER</span><span id="layerPulse2" class="pulse2"></span></li>
-                                    <li class="line4"><span id="layerBall3" class="layerBall ball3" data-id="3">FACEBOOK</span><span id="layerPulse3" class="pulse3"></span></li>
-                                    <li class="line5"><span id="layerBall4" class="layerBall ball4" data-id="4">FACEBOOK</span><span id="layerPulse4" class="pulse4"></span></li>
-                                    <li class="line6"><span id="layerBall5" class="layerBall ball5" data-id="5">FACEBOOK</span><span id="layerPulse5" class="pulse5"></span></li>
-                                    <li class="line7"><span id="layerBall6" class="layerBall ball6" data-id="6">FACEBOOK</span><span id="layerPulse6" class="pulse6"></span></li>
-                                    <li class="line8"><span id="layerBall7" class="layerBall ball7" data-id="7">FACEBOOK</span><span id="layerPulse7" class="pulse7"></span></li>
-                                    <li class="line9"><span id="layerBall8" class="layerBall ball8" data-id="8">FACEBOOK</span><span id="layerPulse8" class="pulse8"></span></li>
-                                    <li class="line10"><span id="layerBall9" class="layerBall ball9" data-id="9">FACEBOOK</span><span id="layerPulse9" class="pulse9"></span></li>
-                                    <li class="line11"><span id="layerBall10" class="layerBall ball10" data-id="10">FACEBOOK</span><span id="layerPulse10" class="pulse10"></span></li>
+                                    <li class="line1"><div id="layerBall" class="layerBall ball" data-id="0"></div><span id="layerPulse" class="pulse"></span></li>
+                                    <li class="line2"><div id="layerBall1" class="layerBall ball1" data-id="1"></div><span id="layerPulse1" class="pulse1"></span></li>
+                                    <li class="line3"><div id="layerBall2" class="layerBall ball2" data-id="2"></div><span id="layerPulse2" class="pulse2"></span></li>
+                                    <li class="line4"><div id="layerBall3" class="layerBall ball3" data-id="3"></div><span id="layerPulse3" class="pulse3"></span></li>
+                                    <li class="line5"><div id="layerBall4" class="layerBall ball4" data-id="4"></div><span id="layerPulse4" class="pulse4"></span></li>
+                                    <li class="line6"><div id="layerBall5" class="layerBall ball5" data-id="5"></div><span id="layerPulse5" class="pulse5"></span></li>
+                                    <li class="line7"><div id="layerBall6" class="layerBall ball6" data-id="6"></div><span id="layerPulse6" class="pulse6"></span></li>
+                                    <li class="line8"><div id="layerBall7" class="layerBall ball7" data-id="7"></div><span id="layerPulse7" class="pulse7"></span></li>
+                                    <li class="line9"><div id="layerBall8" class="layerBall ball8" data-id="8"></div><span id="layerPulse8" class="pulse8"></span></li>
+                                    <li class="line10"><div id="layerBall9" class="layerBall ball9" data-id="9"></div><span id="layerPulse9" class="pulse9"></span></li>
+                                    <li class="line11"><div id="layerBall10" class="layerBall ball10" data-id="10"></div><span id="layerPulse10" class="pulse10"></span></li>
                                 </ul>
                                 <ul id="social">
                                     <li id="layerSocialControl" class="layerSocialControl zone" data-id="0" data-target=".description10"><span></span></li>

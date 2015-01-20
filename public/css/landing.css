@@ -330,7 +330,14 @@ footer .socialmedia { }
 .running .line10 { -moz-transform:rotate(334deg); -webkit-transform:rotate(334deg); transform:rotate(334deg);   -moz-animation:move9 0.5s linear forwards;  -webkit-animation:move9  0.5s linear forwards; -webkit-animation-delay: 0.7s; animation:move9  0.5s linear forwards; animation-delay: 0.7s;}
 .running .line11{ -moz-transform:rotate(367deg); -webkit-transform:rotate(367deg);  transform:rotate(367deg); -moz-animation:move10 0.5s linear forwards;  -webkit-animation:move10  0.5s linear forwards; -webkit-animation-delay: 0.7s; animation:move10  0.5s linear forwards; animation-delay: 0.7s;}
 
-.running .ball, .running .ball1, .running .ball2, .running .ball3 , .running .ball4 , .running .ball5 , .running .ball6 , .running .ball7 , .running .ball8 , .running .ball9 , .running .ball10 {	background-color:#f8c55a ; 	width:10px;	height:10px;	border-radius:50px;		position:absolute;	z-index:99;		-moz-transform:scale(0);	-moz-animation:point 0.1s linear forwards;		-webkit-transform:scale(0);	-webkit-animation:point 0.1s linear forwards; transform:scale(0);	animation:point 0.1s linear forwards;}
+.running .ball, .running .ball1, .running .ball2, .running .ball3 , .running .ball4 , .running .ball5 , .running .ball6 , .running .ball7 , .running .ball8 , .running .ball9 , .running .ball10 {
+    background-color:#f8c55a ;
+    background-size: 10px 10px;
+    width:10px;
+    height:10px;  border-radius:50px;
+    position:absolute;	z-index:99;
+    -moz-transform:scale(0);
+    -moz-animation:point 0.1s linear forwards;		-webkit-transform:scale(0);	-webkit-animation:point 0.1s linear forwards; transform:scale(0);	animation:point 0.1s linear forwards;  }
 .running .ball:hover, .running .ball1:hover, .running .ball2:hover, .running .ball3:hover , .running .ball4:hover , .running .ball5:hover , .running .ball6:hover , .running .ball7:hover , .running .ball8:hover , .running .ball9:hover , .running .ball10:hover , .running .ball11:hover{	background-color:#f8c55a;}
 .running .pulse, .running .pulse1, .running .pulse2, .running .pulse3, .running .pulse4, .running .pulse5, .running .pulse6, .running .pulse7, .running .pulse8, .running .pulse9, .running .pulse10 {	width:12px;	height:12px;	border-radius:30px;	border: 1px solid #fff;	box-shadow: 0 0 5px #fff;	position:absolute;		-moz-transform:scale(0);	-moz-animation:2.1s ease 0.4s normal none infinite pulse;		-webkit-transform:scale(0);	-webkit-animation:2.1s ease 0.4s normal none infinite pulse; transform:scale(0);	animation:2.1s ease 0.4s normal none infinite pulse;}
 .running .pulse:hover, .running .pulse1:hover, .running .pulse2:hover, .running .pulse3:hover, .running .pulse4:hover, .running .pulse5:hover, .running .pulse6:hover, .running .pulse7:hover, .running .pulse8:hover, .running .pulse9:hover, .running .pulse10:hover {		border: 1px solid #f8c55a;	box-shadow: 0 0 5px #f8c55a;}
@@ -813,6 +820,12 @@ ul#social a:hover {	color:#fff;}
     transition: width 0.15s 0.38s linear
 }
 
+@-moz-document url-prefix() {
+    /* Firefox Hack */
+    .description .line-container .connection-line {
+        height: 1.4px;
+    }
+}
 
 
 .description .hor-line-container.rot {
@@ -881,14 +894,20 @@ ul#social a:hover {	color:#fff;}
 .description.description2 h4{ text-align:left !important; padding:0px 0px 0px 0px;}
 .description.description2 p{ text-align:right !important; margin:-39px 80px 0px 0px !important;}
 
-.description9 .line-container {width:38px; top:49px;	right:214px;
+.description9 .line-container {width:38px; top:49px;	right:215px;
     -webkit-transform: rotate(-42deg);
     -moz-transform: rotate(-42deg);
     -ms-transform: rotate(-42deg);
     -o-transform: rotate(-42deg);
     transform: rotate(-42deg)
 }
-.description9 .hor-line-container.rot{ padding-left:0px; transform:rotate(-0deg) !important;}
+.description9 .hor-line-container.rot{ padding-left:0px;
+    -webkit-transform: rotate(-0deg) !important;
+    -moz-transform: rotate(-0deg) !important;
+    -ms-transform: rotate(-0deg) !important;
+    -o-transform: rotate(-0deg) !important;
+    transform: rotate(-0deg) !important;
+}
 
 .description.description9 h4{ text-align:left; padding:0px 0px 0px 0px;}
 .description.description9 p{ text-align:left !important; margin:-60px 0px 0px 0px !important;}
@@ -951,7 +970,7 @@ ul#social a:hover {	color:#fff;}
 .description.description6 p{ text-align:right !important; margin:-60px 0px 0px 0px !important;}
 
 
-.description7 .line-container {width:50px; top:52px;	left:-45px;
+.description7 .line-container {width:50px; top:52px;	left:-44px;
     -webkit-transform: rotate(-38deg);
     -moz-transform: rotate(-38deg);
     -ms-transform: rotate(-38deg);
@@ -967,7 +986,7 @@ ul#social a:hover {	color:#fff;}
 }
 
 .description.description7 h4{ text-align:left; padding:0px 30px 1px 0px;}
-.description.description7 p{ text-align:left !important; margin:-40px 30px 0px 0px !important;}
+.description.description7 p{ text-align:left !important; margin:-40px 0px 0px 0px !important;}
 
 
 .description8 .line-container {width:40px; top:48px;	left:-36px;
@@ -1029,7 +1048,7 @@ ul#social a:hover {	color:#fff;}
 }
 
 .description.description11 h4{ text-align:left; padding:0px 30px 0px 10px;}
-.description.description11 p{ text-align:left !important; margin:-60px 30px 0px -10px !important;}
+.description.description11 p{ text-align:left !important; margin:-60px 0px 0px -10px !important;}
 
 .description h4 {opacity: 0 !important}
 
@@ -1050,17 +1069,17 @@ ul#social a:hover {	color:#fff;}
 
 
 
-.description1 {left: 47px;  top: 50px; position:absolute; width:335px; }
-.description2 {left: 34px;   top: 178px; position:absolute; width:290px;   }
+.description1 {left: 100px;  top: 50px; position:absolute; width:280px; }
+.description2 {left: 69px;   top: 178px; position:absolute; width:255px;   }
 .description3 {left: 0px; top: 360px; position:absolute; width:237px; }
 .description4 {left: 37px;    top: 490px; position:absolute; width:246px;}
-.description5 {left: 150px;    top: 626px; position:absolute; width:280px;  }
+.description5 {left: 180px;    top: 626px; position:absolute; width:250px;  }
 .description6 {left: 200px; top: 23px;  position:absolute; width:287px;}
-.description7 {left: 747px; top: 62px;  position:absolute; width:315px;}
+.description7 {left: 747px; top: 62px;  position:absolute; width:250px;}
 .description8 {left: 845px;  top: 195px;  position:absolute; width:265px;}
 .description9 {left: 868px;   top: 365px; position:absolute; width:220px; }
 .description10 {left: 818px; top: 510px;  position:absolute; width:310px;}
-.description11{left: 685px;   top: 623px; position:absolute; width:296px;}
+.description11{left: 685px;   top: 623px; position:absolute; width:240px;}
 
 
 .fortab{display:none;}
@@ -1395,7 +1414,7 @@ footer div.socialmedia a {
     {
         opacity: 1 !important;
     }
-    
+
     .subPage
     {   
         background-attachment: scroll;
