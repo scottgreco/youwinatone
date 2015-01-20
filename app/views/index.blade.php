@@ -549,7 +549,7 @@
                             By the way, we don't plan on slowing down anytime soon.
                         </p>
                         <div class="box">
-                            <span class="small_part">#</span><span class="timer yellow_sign" data-from="0" data-to="5"></span><br />
+                            <span class="small_part">#</span><span class="timer-1 yellow_sign" data-from="0" data-to="5"></span><br />
                             In Nation
                         </div>
                         <div class="box">

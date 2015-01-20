@@ -1107,6 +1107,17 @@ $(document).ready(function () {
 });
 
 function startCountTo(){
+    $('.timer-1').countTo({
+        speed: 400,
+        refreshInterval: 60,
+        formatter: function (value, options) {
+            return value.toFixed(options.decimals);
+        },
+        onComplete: function (value) {
+            
+        }
+    });
+
     $('.timer').countTo({
         speed: 4000,
         refreshInterval: 60,
