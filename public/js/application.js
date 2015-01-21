@@ -79,9 +79,10 @@ $(document).ready(function () {
          });
          */
     }
-    $("#navSocialLinks a").on("click", function() {
+    /*$("#navSocialLinks a").on("click", function() {
         window.open($(this).data("target"), "_blank");
-    });
+    });*/
+
     $(".vertical.menu a, #navLinks a").on("click", function (e) {
         var $anchor = $(this);
         var divId = $anchor.attr("href");
@@ -1114,7 +1115,7 @@ function startCountTo(){
             return value.toFixed(options.decimals);
         },
         onComplete: function (value) {
-            
+
         }
     });
 

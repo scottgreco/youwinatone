@@ -2,7 +2,7 @@
 <html class="no-js skrollr skrollr-desktop" lang="en">
 <head>
     <meta name='viewport' content='content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0' />
-    <title>Realty One Group</title>
+    <title>Realty ONE Group</title>
     <meta name="description" content="Realty One Group">
 
     
@@ -85,12 +85,12 @@
                 </nav>
                 <div id="navSocialLinks">
                     <div>
-                        <a href="javascript:void(0)" data-target="https://www.facebook.com/RealtyONEGroup" target="_blank" class="facebook"></a>
-                        <a href="javascript:void(0)" data-target="https://twitter.com/RealtyONEnews" target="_blank" class="twitter"></a>
-                        <a href="javascript:void(0)" data-target="https://plus.google.com/+Realtyonegroup/posts" target="_blank" class="gplus"></a>
-                        <a href="javascript:void(0)" data-target="http://www.pinterest.com/realtyonegroup/" target="_blank" class="pinit"></a>
-                        <a href="javascript:void(0)" data-target="http://blog.realtyonegroup.com/" target="_blank" class="rss"></a>
-                        <a href="javascript:void(0)" data-target="http://instagram.com/realtyonegroup" target="_blank" class="histogram"></a>
+                        <a href="https://www.facebook.com/RealtyONEGroup" data-target="" target="_blank" class="facebook"></a>
+                        <a href="https://twitter.com/RealtyONEnews" data-target="" target="_blank" class="twitter"></a>
+                        <a href="https://plus.google.com/+Realtyonegroup/posts" data-target="" target="_blank" class="gplus"></a>
+                        <a href="http://www.pinterest.com/realtyonegroup/" data-target="" target="_blank" class="pinit"></a>
+                        <a href="http://blog.realtyonegroup.com/" data-target="" target="_blank" class="rss"></a>
+                        <a href="http://instagram.com/realtyonegroup" data-target="" target="_blank" class="histogram"></a>
                     </div>
                     <div id="one_magazine">
                         <a href="javascript:void(0)" data-target="http://cloud.digipage.net/go/one_magazine_issue_4/" target="_blank" style="background: transparent; z-index: -1">ONE MAGAZINE</a>

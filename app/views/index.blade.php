@@ -197,7 +197,9 @@
 
                     $(".us_title").text(manager["title"].toUpperCase());
                     $(".us_name").text(manager["name"]);
-                    $(".us_license").text("License: " + manager["license"]);
+                    if( manager["license"] != ""){
+                        $(".us_license").text("License: " + manager["license"]);
+                    }
                     $(".us_description").text(manager["description"]);
                     $("#man_email").val(manager["email"]);
                     $(".manager_img").attr("data-original", baseUrl + "/images/managers/" + manager["image"]);
