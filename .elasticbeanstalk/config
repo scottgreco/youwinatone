@@ -1,5 +1,6 @@
 [global]
 ApplicationName=youwinatone
+AwsCredentialFile=C:\Users\nmartinez\.elasticbeanstalk\aws_credential_file
 ApplicationVersionName=git-38459c9782af05d24b7830802a541058582c4285-1421267689291
 DevToolsEndpoint=git.elasticbeanstalk.us-west-1.amazonaws.com
 EnvironmentName=youwinatone-env

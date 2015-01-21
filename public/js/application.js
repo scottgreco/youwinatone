@@ -922,6 +922,7 @@ $(document).ready(function () {
             return false;
         }
 
+
         if (!phonenumber(phone.val())) {
             alert("Not a valid phone number");
             return false;
@@ -1067,11 +1068,11 @@ $(document).ready(function () {
             return false;
         }
 
-        if (!phonenumber(phone.val())) {
+        var phoneString = phoneArea.val() + "-" + phoneNumber.val();
+        if (!phonenumber(phoneString)) {
             alert("Not a valid phone number");
             return false;
         }
-
 
         $("#conversation_form .modal-btn").prop('disabled', true);
         $("#conversation_form .modal-btn").val("Sending...");
