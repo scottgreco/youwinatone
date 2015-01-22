@@ -280,7 +280,7 @@
             <div id="Culture" class="parentPage">
                 <div id="Data" class="pageScrollSpeed scroll subPage">
                     <div class="contentContainer" style="text-align: center; letter-spacing: 1px;">
-                        <p style="margin-bottom: 2em">
+                        <p>
                             <span>contribute to a vibrant culture</span><br />
                             EveryONE matters and adds something positive to our dynamic team.<br />
                             We celebrate each other's successes by giving back, taking action, working
@@ -738,7 +738,7 @@
                             <div class="corclecontainertop"></div>
                         </div>
                         <div class="corclecontainer">
-                            <div class="boxheading">
+                            <div class="boxheading txt_rightalign">
                                 <span>more</span><br />
                                 education
                             </div>
@@ -763,7 +763,7 @@
                             <div class="corclecontainertop"></div>
                         </div>
                         <div class="corclecontainer">
-                            <div class="boxheading txt_rightalign txtcolorwhite"  style="z-index:9999; height:90px">
+                            <div class="boxheading txtcolorwhite"  style="z-index:9999; height:90px">
                                 <span>more</span><br />
                                 marketing
                             </div>
@@ -982,7 +982,7 @@
                                 <input id="conversation_name" name="conversation_name" placeholder="Name" type="text" value="" data-toggle="tooltip" title="Please Fill Out This Field" data-trigger="manual" class="gold-tooltip">
                                 <input id="conversation_email" name="conversation_email" placeholder="Email" type="email" value="" data-toggle="tooltip" title="Please Fill Out This Field" data-trigger="manual" class="gold-tooltip">
 
-                                <input style="width: 30%; margin-right: 2px" id="conversation_phone_area" name="conversation_phone_area" placeholder="Area Code" type="tel" value="" data-toggle="tooltip" title="Please Fill Out This Field" data-trigger="manual" class="gold-tooltip">
+                                <input style="width: 30%; margin-right: 2px" id="conversation_phone_area" name="conversation_phone_area" placeholder="Area Code" type="tel" value="" data-toggle="tooltip" title="Please Fill Out This Field" data-trigger="manual" class="gold-tooltip" maxlength="3">
                                 <input style="width: 69%" id="conversation_phone_number" name="conversation_phone_number" placeholder="Phone Number" type="tel" value="" data-toggle="tooltip" title="Please Fill Out This Field" data-trigger="manual" class="gold-tooltip">
 
                                 <input type="hidden" id="man_email"/>

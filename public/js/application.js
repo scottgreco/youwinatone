@@ -5,8 +5,8 @@ String.prototype.capitalize = function () {
 
 $(document).ready(function () {
 
-
     $('#conversation_phone_number').mask('000-0000');
+    $('#notify_phone').mask('(000) 000-0000');
 
     function centerModal() {
         $(this).css('display', 'block');
@@ -194,9 +194,7 @@ $(document).ready(function () {
     $window = $(window);
     var xCart = 1;
 
-
-
-    var offset = -500;
+    var offset = -900;
     var offset2 = 0;
     if ($(window).width() <= 768) {
         offset = -400;
@@ -226,11 +224,12 @@ $(document).ready(function () {
         else if (s <= 2400) {
             p = (((s - 1400) / 1000) * 18) + 24;
         }
-        else if (s <= 3400) {
+        else if (s <= 3000) {
             p = (((s - 2400) / 1000) * 18) + 42;
         }
         else if (s <= 9400) {
-            p = (((s - 3400) / 6000) * 25) + 60;
+            p = (((s - 3000) / 6400) * 25) + 52;
+            //p = 60;
         }
         else if (s <= (d - c)) {
             p = (((s - 9400) / ((d - c)- 9400)) * 15) + 85;
@@ -438,56 +437,56 @@ $(document).ready(function () {
             }
             else if (s > 7000 + offset + offset2) {
                 addTweensHeight(['.box6 .corclecontainerbtm'], "0px", 0.2);
-                addTweens(['.box6 .txtrightwithoutbg span'], 1, 1.2);
+
                 addTweensHeight(['.box6 .border-animation'], "386px", 0.2);
             }
             else if (s > 6900 + offset + offset2) {
                 addTweensHeight(['.box6 .corclecontainerbtm'], "0px", 0.2);
-                addTweens(['.box6 .txtrightwithoutbg span'], 0, 0.5);
+                addTweens(['.box6 .txtrightwithoutbg span'], 1, 1.2);
                 addTweens(['.box6 .txtleftbtm', '.box6 .txtleftbtm span'], 1, 1.2);
-                addTweensHeight(['.box6 .border-animation'], "332px", 0.2);
+                addTweensHeight(['.box6 .border-animation'], "340px", 0.2);
             }
             else if (s > 6800 + offset + offset2) {
+                addTweens(['.box6 .txtrightwithoutbg span'], 0, 0.5);
                 addTweens(['.box6 .txtleftbtm', '.box6 .txtleftbtm span'], 0, 0.5);
                 addTweens(['.box6 .txtleftwithoutbg span'], 1, 1.2);
-                addTweensHeight(['.box6 .border-animation'], "224px", 0.2);
+                addTweensHeight(['.box6 .border-animation'], "232px", 0.2);
             }
             else if (s > 6700 + offset + offset2) {
                 addTweens(['.box6 .txtleftwithoutbg span'], 0, 0.5);
                 addTweensHeight(['.box6 .border-animation'], "170px", 0.2);
-                addTweens(['.box6 .boxheading', '.box6 .boxheading span'], 1);
             }
             else if (s > 6600 + offset + offset2) {
-                addTweens(['.box6 .boxheading', '.box6 .boxheading span'], 0);
                 addTweens(['.box6 .dottedcircle'], 1);
                 addTweensHeight(['.box6 .border-animation'], "75px", 0.2);
+                addTweens(['.box6 .boxheading', '.box6 .boxheading span'], 1);
             }
             else if (s > 6500 + offset + offset2) {
                 addTweens(['.box6 .dottedcircle'], 0);
                 addTweensHeight(['.box5 .corclecontainerbtm'], "323px", 0.2);
                 addTweensHeight(['.box6 .border-animation'], "0px", 0.2);
+                addTweens(['.box6 .boxheading', '.box6 .boxheading span'], 0);
             }
             else if (s > 6400 + offset + offset2) {
                 addTweensHeight(['.box5 .corclecontainerbtm'], "160px", 0.2);
             }
             else if (s > 6300 + offset + offset2) {
-                addTweens(['.box5 .txtrightwithoutbg span'], 1, 1.2);
+
                 addTweensHeight(['.box5 .border-animation'], "387px", 0.2);
                 addTweensHeight(['.box5 .corclecontainerbtm'], "0px", 0.2);
             }
             else if (s > 6200 + offset + offset2) {
-                addTweens(['.box5 .txtrightwithoutbg span'], 0, 0.5);
                 addTweensHeight(['.box5 .corclecontainerbtm'], "0px", 0.2);
                 addTweens(['.box5 .txtrightbtm', '.box5 .txtrightbtm span'], 1, 1.2);
                 addTweensHeight(['.box5 .border-animation'], "307px", 0.2);
             }
             else if (s > 6100 + offset + offset2) {
                 addTweens(['.box5 .txtrightbtm', '.box5 .txtrightbtm span'], 0, 1.2);
-                addTweens(['.box5 .boxheading'], 1);
-                addTweensHeight(['.box5 .border-animation'], "224px", 0.2);
+                addTweens(['.box5 .txtrightwithoutbg span'], 1, 1.2);
+                addTweensHeight(['.box5 .border-animation'], "232px", 0.2);
             }
             else if (s > 6000 + offset + offset2) {
-                addTweens(['.box5 .boxheading'], 0);
+                addTweens(['.box5 .txtrightwithoutbg span'], 0, 0.5);
                 addTweens(['.box5 .txtrighttop', '.box5 .txtrighttop span'], 1, 1.2);
                 addTweensHeight(['.box5 .border-animation'], "165px", 0.2);
             }
@@ -495,10 +494,12 @@ $(document).ready(function () {
                 addTweens(['.box5 .txtrighttop', '.box5 .txtrighttop span'], 0, 0.5);
                 addTweens(['.box5 .corclecontainerbtm'], 1, 1.2);
                 addTweens(['.box5 .dottedcircle', '.box5 .boxheading'], 1);
+                addTweens(['.box5 .boxheading'], 1);
                 addTweensHeight(['.box5 .border-animation'], "50px", 0.2);
             }
             else if (s > 5800 + offset + offset2) {
                 addTweensHeight(['.box4 .corclecontainerbtm'], "280px", 0.2);
+                addTweens(['.box5 .boxheading'], 0);
                 addTweensHeight(['.box5 .border-animation'], "0px", 0.2);
             }
             else  if (s > 5700 + offset + offset2) {
@@ -662,15 +663,9 @@ $(document).ready(function () {
         });
     }
 
-
-    $('#Campaign .box').appear(function () {
+    $('.ID-Image, #Campaign p').waypoint(function(direction) {
         startCountTo();
-    });
-    $('.content').appear(function () {
-        setTimeout(function () {
-            $('#trigger').trigger('click');
-        }, 100);
-    });
+    })
 
     var controller = $.superscrollorama({
         triggerAtCenter: false,
@@ -1110,7 +1105,7 @@ $(document).ready(function () {
 
 function startCountTo(){
     $('.timer-1').countTo({
-        speed: 400,
+        speed: 500,
         refreshInterval: 60,
         formatter: function (value, options) {
             return value.toFixed(options.decimals);
@@ -1127,9 +1122,9 @@ function startCountTo(){
             return value.toFixed(options.decimals);
         },
         onComplete: function (value) {
-            setTimeout(function(){
+            /*setTimeout(function(){
                 startCountTo();
-            }, 3000);
+            }, 3000);*/
 
         }
     });
@@ -1137,7 +1132,7 @@ function startCountTo(){
 
 function phonenumber(phone)
 {
-    var phoneno = /^\+?([0-9]{2})\)?[-. ]?([0-9]{4})[-. ]?([0-9]{4})$/;
+    var phoneno = /^\+?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
     if(phone.match(phoneno))
     {
         return true;

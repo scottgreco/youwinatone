@@ -23,6 +23,7 @@
     {{ HTML::script('/js/js/jquery_04.js') }}
     {{ HTML::script('/js/js/jquery_009.js') }}
     {{ HTML::script('/js/js/unveil.js') }}
+    {{ HTML::script('/js/js/waypoints.min.js') }}
     {{ HTML::script('/js/watch.min.js') }}
     {{ HTML::script('/js/jquery.easing.min.js') }}
     {{ HTML::script('/js/jquery.scrollsnap.js') }}
@@ -32,6 +33,7 @@
     {{ HTML::script('/js/jquery.lazyload.min.js') }}
     {{ HTML::script('/js/jquery.smoothwheel.js') }}
     {{ HTML::script('/js/jquery.mask.min.js') }}
+    {{ HTML::script('/js/bootstrap.min.js') }}
     {{ HTML::script('/js/bootstrap.min.js') }}
     {{ HTML::script('/js/application.js') }}
 
