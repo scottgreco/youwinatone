@@ -609,7 +609,7 @@ ul#social a:hover {	color:#fff;}
 .box4 .corclecontainerbtm{margin-top:66px;}
 .box4 .boxheading { left: 285px; }
 .box7 .corclecontainerbtm{margin-top:66px;}
-.box5 .boxheading {left: 50px; top: -105px;}
+.box5 .boxheading {left: 50px; top: -105px; opacity: 1;}
 .box5 .corclecontainer{padding-top:0px;}
 .box5 .corclecontainerbtm{margin-top:24px;}
 .box6 .corclecontainer{padding-top:0px;}
@@ -730,7 +730,7 @@ ul#social a:hover {	color:#fff;}
 
 .txt_rightalign{text-align:right; left: 294px; }
 
-.box5 .boxheading{  left: -160px;  top: 131px;opacity: 1;}
+
 .box6 .boxheading{      background-position: -6px 45px;    background-repeat: no-repeat;    left: 220px;    padding-left: 60px;    top: -100px;}
 .box7 .boxheading { left: 90px;   top: -60px; text-align: right;}
 .bx-pager{display:none;}
@@ -1199,7 +1199,12 @@ section#page8 div.notyfymetxt { margin-top: 10px;}
     font-family: museo_sans100;
     font-size: 16px;
 }
-#notify-modal div.send_message form input[type='submit']{ font-size: 16px;}
+#notify-modal div.send_message form input[type='submit']{
+    font-size: 16px;
+    width: auto;
+    margin: 20px auto -25px auto;
+    float: none;
+}
 
 #map-modal div.modal-dialog { width: 750px;}
 .modal-body img{
@@ -1305,6 +1310,10 @@ footer div.socialmedia a {
 
 @media (max-width: 770px ){
     .notyfyme {padding-bottom: 20px;}
+
+    #notify-modal div.send_message form input[type='submit'] {
+        margin-bottom: 0px
+    }
 }
 
 @media (max-width: 1110px), (max-height : 710px){
