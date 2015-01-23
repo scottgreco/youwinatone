@@ -27,6 +27,9 @@ return array(
             'relationship' => 'city.state', //this is the name of the Eloquent relationship method!
             'select' => "(:table).name",
         ),
+        'zipcode' => array(
+            'title' => 'ZIP Code',
+        )
     ),
 
     'edit_fields' => array(
@@ -79,6 +82,10 @@ return array(
             'name_field' => 'name',
             'options_sort_field' => 'name',
         ),
+        'zipcode' => array(
+            'title' => 'ZIP Code',
+            'type' => 'text',
+        )
     ),
 
     'sort' => array(
@@ -98,6 +105,7 @@ return array(
         'lat.required' => 'Latitude field is required',
         'lng.required' => 'Longitude field is required',
         'city_id.required' => 'City field is required',
+        'zipcode' => 'ZIP Code field is required',
         'manager_id.required' => 'Manager field is required',
     )
 );

@@ -2,7 +2,7 @@
 <html class="no-js skrollr skrollr-desktop" lang="en">
 <head>
     <meta name='viewport' content='content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0' />
-    <title>Realty ONE Group</title>
+    <title>RealtyONEGroup</title>
     <meta name="description" content="Realty One Group">
 
     

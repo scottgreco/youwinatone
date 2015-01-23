@@ -17,6 +17,22 @@
         $.get('/offices', function(items) {
             offices = items.offices;
             var pairs = items.states;
+
+
+            for(var i = 0; i < offices.length; i++){
+                var idCity = offices[i].city_id;
+
+                 $.each(pairs, function(sateName, state){
+                    $.each(state, function(cityName, city){
+                        if(city == idCity){
+                            offices[i].state = sateName;
+                            offices[i].city = cityName;
+                        }
+                    });
+                 })
+            }
+
+
             var $state = $('#state');
             var $city = $('#city');
             $state.children().remove();
@@ -142,10 +158,15 @@
     }
 
     function bindMarker(marker, map, office) {
+        var zipCode = "";
+        if(office["zipcode"]){
+            zipCode = office["zipcode"];
+        }
+
         var contentString = '<div>' +
             '<div class="infowindow-img"><img class="office_img" src="' + baseUrl + '/images/bx1.png' + '" data-original="' + baseUrl + 'images/offices/' + office["image"] + '" alt="" /></div>' +
             '<div class="infowindow-text">' +
-            '<span>' + office["name"].toUpperCase() + '<br/>' + office["address"] + '<br/>' + office["phone"] + '<br/><a href="javascript:void(0);" class="view-more">View more</a></span>' +
+            '<span>' + office["name"].toUpperCase() + '<br/>' + office["address"] + '<br/>' + office["city"] + ', ' + office["state"] + ', ' + zipCode + '<br/>' + office["phone"] + '<br/><a href="javascript:void(0);" class="view-more">View more</a></span>' +
             '</div>' +
             '</div>';
 
@@ -709,7 +730,7 @@
                             <div class="corclecontainertop"></div>
                         </div>
                         <div class="corclecontainer">
-                            <div class="boxheading txt_rightalign txtcolorwhite">
+                            <div class="boxheading txtcolorwhite">
                                 <span>more</span><br />
                                 commission
                             </div>
@@ -988,7 +1009,7 @@
                                 <input type="hidden" id="man_email"/>
                             </div>
                             <div class="col-sm-6">
-                                <textarea style="height: 185px" id="conversation_message" name="conversation_message" placeholder="Message"  data-toggle="tooltip" title="Please Fill Out This Field" data-trigger="manual" class="gold-tooltip"></textarea>
+                                <textarea style="height: 176px" id="conversation_message" name="conversation_message" placeholder="Message"  data-toggle="tooltip" title="Please Fill Out This Field" data-trigger="manual" class="gold-tooltip"></textarea>
                             </div>
                         </div>
                         <p class="text-center">

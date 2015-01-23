@@ -7,6 +7,7 @@ $(document).ready(function () {
 
     $('#conversation_phone_number').mask('000-0000');
     $('#notify_phone').mask('(000) 000-0000');
+    $("#feedback_phone").mask('(000) 000-0000');
 
     function centerModal() {
         $(this).css('display', 'block');

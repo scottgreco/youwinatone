@@ -607,8 +607,9 @@ ul#social a:hover {	color:#fff;}
 .box3 .corclecontainerbtm{margin-top:66px;}
 .box3 .boxheading { left: 90px ;}
 .box4 .corclecontainerbtm{margin-top:66px;}
+.box4 .boxheading { left: 285px; }
 .box7 .corclecontainerbtm{margin-top:66px;}
-.box5 .boxheading {left: 50px !important; top: -105px !important;;}
+.box5 .boxheading {left: 50px; top: -105px;}
 .box5 .corclecontainer{padding-top:0px;}
 .box5 .corclecontainerbtm{margin-top:24px;}
 .box6 .corclecontainer{padding-top:0px;}
@@ -731,7 +732,7 @@ ul#social a:hover {	color:#fff;}
 
 .box5 .boxheading{  left: -160px;  top: 131px;opacity: 1;}
 .box6 .boxheading{      background-position: -6px 45px;    background-repeat: no-repeat;    left: 220px;    padding-left: 60px;    top: -100px;}
-.box7 .boxheading { left: 80px;   top: -50px;}
+.box7 .boxheading { left: 90px;   top: -60px; text-align: right;}
 .bx-pager{display:none;}
 
 
@@ -1142,7 +1143,7 @@ ul#social a:hover {	color:#fff;}
     float: left;
     box-shadow: 0 0 1px 0 #d0d0d0 inset;
     color: #5c5c5c;
-    font-size: 18px;
+    font-size: 16px;
     padding: 12px 5px;
     margin-top: 20px;
     width: 100%;
@@ -1175,15 +1176,15 @@ ul#social a:hover {	color:#fff;}
 #Research .contentContainer form#feedback_form input, 
 #Research .contentContainer form#feedback_form textarea,
 .row textarea {
-    font-size: 21px !important;
+    font-size: 16px !important;
     font-family: museo_sans100 !important;
     color: #5c5c5c;
 }
 .modal-form form#conversation-form input[type='text'] { font-size: 21px; font-family: museo_sans100; color: #5c5c5c;}
 
 #Research .contentContainer form#feedback_form .row textarea {
-    height: 193px;
-    font-size: 21px;
+    height: 176px;
+    font-size: 16px;
     font-family: museo_sans100;
     color: #5c5c5c;}
 div#page5 {
@@ -1225,7 +1226,7 @@ section#page8 div.notyfymetxt { margin-top: 10px;}
 }
 
 #map-modal .modal-btn {
-    font-size: 18px !important;
+    font-size: 16px !important;
 }
 
 #state, #city { color: #5c5c5c; font-family: museo_sans100 !important;}
@@ -1564,12 +1565,12 @@ footer div.socialmedia a {
     .height_1295{height: 770px !important;}
     
     #Locations {padding: 1px 10px 10px 10px;}
+
     #Data .contentContainer { padding:10px 10px 0 10px; background-image: none; }
     #Data .contentContainer p{ font-size: 18px;    line-height: 28px;}
-    #Data .contentContainer p span {    font-size: 35px;    line-height: 40px;}
+    #Data .contentContainer p span {    font-size: 30px !important;    line-height: 35px  !important;}
 
     
-    #Campaign .contentContainer p span {    font-size: 35px;    line-height: 40px;}
     #Campaign .contentContainer,
     #Campaign2 .contentContainer{padding:10px 10px 0 10px;}
     #Campaign .contentContainer p{ font-size: 18px;    line-height: 28px;}
@@ -1578,16 +1579,20 @@ footer div.socialmedia a {
           background-position: center;
       }
 
+    #Campaign .contentContainer p span, #Campaign2 .contentContainer p span {
+        font-size: 30px !important;    line-height: 35px !important;
+    }
+
     #Research .contentContainer{padding:10px 10px 0 10px;}
 
     #Research .contentContainer p span {
-        font-size: 35px !important;
+        font-size: 30px !important;
     }
     
     #Research form { margin-top: 0px;}
 
     #Lab .contentContainer { padding-top: 0px;}
-    
+    #Lab .contentContainer .testimonials p span { font-size: 30px !important; }
     #Locations .contentContainer p{ font-size: 18px; line-height: 28px;padding-bottom: 0px !important;margin-top: 0px !important;}
     #Locations .contentContainer p span {    font-size: 35px !important;    line-height: 40px;}
 
@@ -1603,7 +1608,7 @@ footer div.socialmedia a {
     
     .height_1130{height: 520px !important;}
     .height_6190{height: auto !important; overflow:hidden; padding-bottom: 30px; }
-    #Experience div.contentContainer p > span {    font-size: 35px;    line-height: 10px;}
+    #Experience div.contentContainer p > span {    font-size: 30px;    line-height: 10px;}
     .bx-pager{display:none;}
     .height_910 {    height: 550px !important;}
     .height_830 {height: auto !important;}
@@ -1630,8 +1635,8 @@ footer div.socialmedia a {
     .corclecontainertopc{display:none;}
     .corclecontainerbtm{display:none;}
 
-    .boxheading { font-size: 35px;  left: 0 !important; margin-bottom: 20px !important;  padding: 0; width: 100%;  position: relative;   text-align: center;   top: 0  !important;    -moz-transform: scale(1);   -webkit-transform: scale(1);   -o-transform: scale(1);   transform: scale(1);}
-    .boxheading span{font-size:35px;}
+    .boxheading { font-size: 30px !important;  left: 0 !important; margin-bottom: 20px !important;  padding: 0; width: 100%;  position: relative;   text-align: center !important;   top: 0  !important;    -moz-transform: scale(1);   -webkit-transform: scale(1);   -o-transform: scale(1);   transform: scale(1);}
+    .boxheading span{font-size:35px !important;}
     .txtlefttop {  background-image:url(../images/dot.png); background-repeat:no-repeat;background-size: 10px; background-position:center bottom;     display: block;  left:0px !important; top:0px  !important;      font-size: 20px;    line-height: 28px;       padding: 0 5%;    position: relative;    text-align: center;     -moz-transform: scale(1);   -webkit-transform: scale(1);   -o-transform: scale(1);   transform: scale(1);     width: 90%;  padding-bottom:30px;padding-top: 12px; min-height: 65px; }
     .txtrightwithoutbg, #cbox2 .txtleftbtm, #cbox2 .txtleft {
            background-image:url(../images/dot.png); background-repeat:no-repeat; background-size: 10px; background-position:center bottom;       display: block;  left:0px !important; top:0px  !important;       font-size: 20px;    line-height: 28px;       padding: 0 5%; margin: auto;  position: relative;    text-align: center;    -moz-transform: scale(1);   -webkit-transform: scale(1);   -o-transform: scale(1);   transform: scale(1);     width: 90%;  padding-bottom:30px;padding-top: 12px;min-height: 65px;
