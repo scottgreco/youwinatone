@@ -3,8 +3,8 @@
 <head>
     <meta name='viewport' content='content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0' />
     <title>RealtyONEGroup</title>
-    <meta name="description" content="Realty One Group">
-
+    <meta name="description" content="Realty One Group, Cool Culture, Creative Coaching, Crazy Commissions, Real Estate Agent Success">
+    <meta name="keywords" content="Realty One Group, YouWinAtOne, Cool Culture, Creative Coaching, Crazy Commission, Real Estate Broker, Best Real Estate Company, Real Estate Career">
     
 
 {{ HTML::style('/css/bootstrap.css') }}

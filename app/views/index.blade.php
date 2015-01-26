@@ -164,7 +164,7 @@
         }
 
         var contentString = '<div>' +
-            '<div class="infowindow-img"><img class="office_img" src="' + baseUrl + '/images/bx1.png' + '" data-original="' + baseUrl + 'images/offices/' + office["image"] + '" alt="" /></div>' +
+            '<div class="infowindow-img"><img class="office_img" alt="Office" title="Office" src="' + baseUrl + '/images/bx1.png' + '" data-original="' + baseUrl + 'images/offices/' + office["image"] + '" alt="" /></div>' +
             '<div class="infowindow-text">' +
             '<span>' + office["name"].toUpperCase() + '<br/>' + office["address"] + '<br/>' + office["city"] + ', ' + office["state"] + ', ' + zipCode + '<br/>' + office["phone"] + '<br/><a href="javascript:void(0);" class="view-more">View more</a></span>' +
             '</div>' +
@@ -262,7 +262,7 @@
                 <div id="Home" class="pageScrollSpeed scroll pageHeight subPage">
                     <div class="contentContainer">
                         <div class="homemain">
-                            {{ HTML::image('images/maintxt.png') }}
+                            {{ HTML::image('images/maintxt.png', 'Everyone Is Awesome') }}
                             <br />
                             <h1>we are REALTY <span>ONE</span> GROUP</h1>
                             <p>
@@ -595,28 +595,28 @@
                         <p class="whitecolor"><span class="header-51">media recognition</span>We're creating quite a buzz:</p>
                         <ul id="flexiselDemo1">
                             <li>
-                                {{ HTML::image('images/logo1.png') }}
+                                {{ HTML::image('images/logo1.png', 'Inc.500') }}
                             </li>
                             <li>
-                                {{ HTML::image('images/logo2.png') }}
+                                {{ HTML::image('images/logo2.png', 'inman') }}
                             </li>
                             <li>
-                                {{ HTML::image('images/logo3.png') }}
+                                {{ HTML::image('images/logo3.png', 'Real Trends') }}
                             </li>
                             <li>
-                                {{ HTML::image('images/logo4.png') }}
+                                {{ HTML::image('images/logo4.png', 'Wall Street Journal') }}
                             </li>
                             <li>
-                                {{ HTML::image('images/logo5.png') }}
+                                {{ HTML::image('images/logo5.png', 'RISMedia') }}
                             </li>
                             <li>
-                                {{ HTML::image('images/logo6.png') }}
+                                {{ HTML::image('images/logo6.png', 'CNN.com') }}
                             </li>
                             <li>
-                                {{ HTML::image('images/logo7.png') }}
+                                {{ HTML::image('images/logo7.png', 'Market Watch') }}
                             </li>
                             <li>
-                                {{ HTML::image('images/logo8.png') }}
+                                {{ HTML::image('images/logo8.png', 'Reuters') }}
                             </li>
                         </ul>
                     </div>
@@ -945,7 +945,7 @@
                            <p> <span>what are you waiting for?</span></p>
                            <p>Advance your career and join us to win! #HelloTomorrow</p>
                             <p><a class="tel" tabIndex="-1" href="tel:888.461.0101">
-                            {{ HTML::image('images/phine_icon.png') }}888.461.0101</a> </p>
+                            {{ HTML::image('images/phine_icon.png', 'icon') }}888.461.0101</a> </p>
 
 
                         <form accept-charset="UTF-8" data-remote="true" id="feedback_form" method="post">
