@@ -11,7 +11,7 @@ var oldPageYOffset=0;$(window).scroll(function(){if(window.pageYOffset!=oldPageY
 var s=$(window).scrollTop(),d=$(document).height(),c=$(window).height();var p=0;if(s<=1400){p=(s / 1400)*24;}
 else if(s<=2400){p=(((s-1400)/ 1000)*18)+24;}
 else if(s<=3000){p=(((s-2400)/ 1000)*18)+42;}
-else if(s<=9400){p=(((s-3000)/ 6400)*25)+52;}
+else if(s<=9400){p=(((s-3000)/ 8500)*25)+52;}
 else if(s<=(d-c)){p=(((s-9400)/((d-c)-9400))*15)+85;}
 $("#navScrollMiddle").css("width",p+"%");var offSetContentLogos=800;if($(window).width()<=770){offSetContentLogos=220;offset=-1500;}
 if(s<=offSetContentLogos){TweenMax.to($('#Data .content'),.1,{css:{opacity:0},onComplete:function(){$('.content').removeClass('running').addClass('reverse');}});}

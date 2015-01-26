@@ -336,7 +336,7 @@ footer .socialmedia { }
 
 .content {	width:1088px;	min-height:786px;	margin:0 auto;	position:relative;	color:#fff;	z-index:1000;	overflow:hidden;}
 #trigger {display:none;}
-.ID-Image {	width:270px;	height:270px;background-size: 158px;	background-image:url(../../images/one.png);	background-repeat:no-repeat; 	background-position: center center;	margin:130px auto 0;}
+.ID-Image {	width:200px;	height:270px;background-size: 158px;	background-image:url(../../images/one.png);	background-repeat:no-repeat; 	background-position: center center;	margin:130px auto 0;}
 .ID-Mobile { display: none;}
 #follow { 	list-style:none; 	position:relative;	top:140px;	left:96px;	z-index:-1;}
 .running .line1,.running .line2,.running .line3,.running .line4,.running .line5,.running .line6,.running .line7,.running .line8,.running .line9,.running .line10,.running .line11 {	background:#fff; 	width:0px;	height:1px;	-moz-transform-origin: 0 0;	-webkit-transform-origin: 0 0; transform-origin: 0 0;-webkit-backface-visibility: hidden; outline: 1px solid transparent;}
