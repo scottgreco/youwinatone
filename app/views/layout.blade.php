@@ -5,37 +5,34 @@
     <title>RealtyONEGroup</title>
     <meta name="description" content="Realty One Group, Cool Culture, Creative Coaching, Crazy Commissions, Real Estate Agent Success">
     <meta name="keywords" content="Realty One Group, YouWinAtOne, Cool Culture, Creative Coaching, Crazy Commission, Real Estate Broker, Best Real Estate Company, Real Estate Career">
-    
 
-{{ HTML::style('/css/bootstrap.css') }}
-{{ HTML::style('/css/landing.css?v=1.0') }}
+{{ Minify::stylesheet(array('/css/bootstrap.css', '/css/landing.css')) }}
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
-
-    {{ HTML::script('/js/js/jquery_004.js') }}
-    {{ HTML::script('/js/js/TweenMax.min.js') }}
-    {{ HTML::script('/js/js/jquery.js') }}
-    {{ HTML::script('/js/js/skrollr.js') }}
-    {{ HTML::script('/js/js/jquery_006.js') }}
-    {{ HTML::script('/js/js/jquery_002.js') }}
-    {{ HTML::script('/js/js/jquery_003.js') }}
-    {{ HTML::script('/js/js/jquery_04.js') }}
-    {{ HTML::script('/js/js/jquery_009.js') }}
-    {{ HTML::script('/js/js/unveil.js') }}
-    {{ HTML::script('/js/js/waypoints.min.js') }}
-    {{ HTML::script('/js/watch.min.js') }}
-    {{ HTML::script('/js/jquery.easing.min.js') }}
-    {{ HTML::script('/js/jquery.scrollsnap.js') }}
-    {{ HTML::script('/js/jquery.scrollstop.js') }}
-    {{ HTML::script('/js/js/jquery.flexisel.js') }}
-    {{ HTML::script('/js/js/jquery.bxslider.min.js') }}
-    {{ HTML::script('/js/jquery.lazyload.min.js') }}
-    {{ HTML::script('/js/jquery.smoothwheel.js') }}
-    {{ HTML::script('/js/jquery.mask.min.js') }}
-    {{ HTML::script('/js/bootstrap.min.js') }}
-    {{ HTML::script('/js/bootstrap.min.js') }}
-    {{ HTML::script('/js/application.js') }}
+    {{ Minify::javascript('/js/js/jquery_004.js') }}
+    {{ Minify::javascript('/js/js/TweenMax.min.js') }}
+    {{ Minify::javascript('/js/js/jquery.js') }}
+    {{ Minify::javascript('/js/js/skrollr.js') }}
+    {{ Minify::javascript('/js/js/jquery_006.js') }}
+    {{ Minify::javascript('/js/js/jquery_002.js') }}
+    {{ Minify::javascript('/js/js/jquery_003.js') }}
+    {{ Minify::javascript('/js/js/jquery_04.js') }}
+    {{ Minify::javascript('/js/js/jquery_009.js') }}
+    {{ Minify::javascript('/js/js/unveil.js') }}
+    {{ Minify::javascript('/js/js/waypoints.min.js') }}
+    {{ Minify::javascript('/js/watch.min.js') }}
+    {{ Minify::javascript('/js/jquery.easing.min.js') }}
+    {{ Minify::javascript('/js/jquery.scrollsnap.js') }}
+    {{ Minify::javascript('/js/jquery.scrollstop.js') }}
+    {{ Minify::javascript('/js/js/jquery.flexisel.js') }}
+    {{ Minify::javascript('/js/js/jquery.bxslider.min.js') }}
+    {{ Minify::javascript('/js/jquery.lazyload.min.js') }}
+    {{ Minify::javascript('/js/jquery.smoothwheel.js') }}
+    {{ Minify::javascript('/js/jquery.mask.min.js') }}
+    {{ Minify::javascript('/js/bootstrap.min.js') }}
+    {{ Minify::javascript('/js/bootstrap.min.js') }}
+    {{ Minify::javascript('/js/application.js') }}
 
 
 
