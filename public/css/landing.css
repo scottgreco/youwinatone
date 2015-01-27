@@ -126,7 +126,7 @@ body{height:auto !important;}
 
 .btn-fixed-bottom .inner-content .subtext {
     font-size: 12px;
-    margin: 32px 0;
+    margin: 24px 0;
 }
 
 .btn-fixed-bottom .inner-content .subtext span {
@@ -138,11 +138,11 @@ body{height:auto !important;}
     color: #231f20;
     font-size: 12px;
     border-radius: 5px;
-    width: 90%;
+    width: 70%;
     text-align: center;
     display: block;
     margin: 10px auto;
-    padding: 3px;
+    padding: 7px;
     font-family: museo_sans500;
     text-decoration: none;
 }

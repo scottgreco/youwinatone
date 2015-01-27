@@ -54,10 +54,10 @@ return array(
 
 		'mysql' => array(
 			'driver'    => 'mysql',
-			'host'      => 'localhost',
-			'database'  => 'forge',
-			'username'  => 'forge',
-			'password'  => '',
+			'host'      => 'http://dbywaolive.cxk5qpyqrckd.us-east-1.rds.amazonaws.com:3306/',
+			'database'  => 'dbYWAOLive',
+			'username'  => 'db_admin',
+			'password'  => 'ywao2014*',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
