@@ -48,6 +48,7 @@ body{height:auto !important;}
     cursor: pointer;
     -webkit-transition: bottom 0.5s;
     transition: bottom 0.5s;
+    z-index: 10000;
 }
 
 .btn-fixed-bottom > div {
@@ -273,9 +274,9 @@ body{height:auto !important;}
     padding-top: 120px;
 }
 #Home.pageHeight{
-    height: 780px;
+    height: 815px;
 }
-#Home { 	background-image: url(../../images/home_bg.jpg);	float: left;	width: 100%;	background-size: 100% auto; background-position: 0 100px;}
+#Home { 	background-image: url(../../images/home_bg.jpg);	float: left;	width: 100%;	background-size: cover; background-position: 0 100px;}
 #Home .content {	color: #000000;	font-size: 28px; 	width: 401px; /*285*/	position: absolute; /*relative*/	top: 33%;	/*left: 63%;*/	right: 0;	float: right;}
 #Home .content h1 {width: 384px;}
 
@@ -428,7 +429,7 @@ body{height:auto !important;}
 #Research  form  input[type="submit"],
 #notify-modal  form  input[type="submit"],
 #modal-email  form  input[type="submit"]
-{background:#F5C65D;    border: medium none;    color: #fff;    font-family: museo_sans300;    font-size: 20px;    padding: 12px 20px; text-transform:uppercase; border-radius:5px;}
+{background:#F5C65D;    border: medium none;    color: #fff;    font-family: museo_sans300;    font-size: 20px;    padding: 11px 20px; text-transform:uppercase; border-radius:5px;}
 #modal-email .modal-header {text-align: center}
 #modal-email .modal-header h4{font-size: 1.4em; color:white; text-transform: uppercase}
 
@@ -1454,6 +1455,20 @@ footer div.socialmedia a {
     #notify-modal div.send_message form input[type='submit'] {
         margin-bottom: 0px
     }
+
+    .modal-header .close {
+        margin-top: 10px;
+    }
+
+    .menu li {
+        list-style: none;
+    }
+
+    .btn-fixed-bottom {
+        right:0px;
+        left: 50%;
+        margin-left: -100px;
+    }
 }
 
 @media (max-width: 1110px), (max-height : 710px){
@@ -1464,7 +1479,9 @@ footer div.socialmedia a {
 }
 
 @media only screen and (min-width: 769px) and (max-width: 959px) {
-    
+    .menu li {
+        list-style: none;
+    }
     body{height:auto !important;}
     #navContainer{ width:96%; padding:0px 2%;}
     #navLinkSection{display:none;}
@@ -2081,6 +2098,7 @@ footer div.socialmedia a {
         width: 100%;
         height: 100%;
         margin-top: 0px;
+        margin-left: 0px;
     }
     #videoModal .modal-content,
      #videoModal .modal-body {

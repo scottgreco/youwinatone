@@ -1027,7 +1027,7 @@
                         </div>
                         <div class="col-sm-8 office_text" style="padding-left:0">
                             <div class="off_name" style="font-size: 20px"></div>
-                            <div class="off_address" style="font-size: 12px; width: 145px;"></div>
+                            <div class="off_address" style="font-size: 14px; width: 145px;"></div>
                             <div class="off_phone"></div>
                             <div class="off_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel hendrerit erat. Aenean posuere congue odio, ut fermentum ipsum tempor sed. Vivamus non leo molestie, congue arcu sed, fringilla tortor. Quisque volutpat aliquet tincidunt.</div>
                         </div>

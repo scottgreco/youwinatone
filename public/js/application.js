@@ -48,6 +48,13 @@ $(document).ready(function () {
         return false;
     });
 
+    if($(window).width() < 400){
+        $(".btn-fixed-bottom").on("click", ".p-text-01", function(e){
+            $(".btn-fixed-bottom").removeClass("open");
+            return false;
+        });
+    }
+
     if( navigator.userAgent.match(/iPhone|iPad|iPod/i) ) {
 /*
         $('.modal').on('show.bs.modal', function() {
