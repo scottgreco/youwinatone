@@ -1,5 +1,7 @@
 /bootstrap/compiled.php
 /vendor
+/public/js/builds
+/public/css/builds
 /.idea
 composer.phar
 composer.lock
@@ -7,5 +9,7 @@ composer.lock
 .env.php
 .DS_Store
 Thumbs.db
-
-.elasticbeanstalk/
+production.sqlite
+
+.elasticbeanstalk/
+

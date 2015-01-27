@@ -92,7 +92,7 @@
                         <a href="http://instagram.com/realtyonegroup" data-target="" target="_blank" class="histogram"></a>
                     </div>
                     <div id="one_magazine">
-                        <a href="javascript:void(0)" data-target="http://cloud.digipage.net/go/one_magazine_issue_4/" target="_blank" style="background: transparent; z-index: -1">ONE MAGAZINE</a>
+                        <a href="http://cloud.digipage.net/go/one_magazine_issue_4/" data-target="" target="_blank" style="background: transparent; z-index: -1">ONE MAGAZINE</a>
                     </div>
                 </div>
             </div>

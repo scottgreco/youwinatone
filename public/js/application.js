@@ -33,14 +33,14 @@ $(document).ready(function () {
         }
     });
 
+
     $('.modal').on('show.bs.modal', centerModal);
     $(window).on("resize", function () {
         $('.modal:visible').each(centerModal);
     });
-
-    // This entire section makes Bootstrap Modals work with iOS
+    
     if( navigator.userAgent.match(/iPhone|iPad|iPod/i) ) {
-
+/*
         $('.modal').on('show.bs.modal', function() {
             setTimeout(function () {
                 scrollLocation = $(window).scrollTop();
@@ -50,7 +50,7 @@ $(document).ready(function () {
                     .css({'margin-top': scrollLocation + 'px'});
             }, 0);
         });
-
+*/
         $('input').on('blur', function(){
             setTimeout(function() {
                 // This causes iOS to refresh, fixes problems when virtual keyboard closes
