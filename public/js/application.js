@@ -39,6 +39,15 @@ $(document).ready(function () {
         $('.modal:visible').each(centerModal);
     });
 
+    $(".btn-fixed-bottom:not(.open)").click(function(){
+        $(this).addClass("open");
+    });
+
+    $(".btn-fixed-bottom").on("click", "span.close", function(e){
+        $(".btn-fixed-bottom").removeClass("open");
+        return false;
+    });
+
     if( navigator.userAgent.match(/iPhone|iPad|iPod/i) ) {
 /*
         $('.modal').on('show.bs.modal', function() {
@@ -90,6 +99,7 @@ $(document).ready(function () {
         var offset = 60;
         $(window).width() > 770
         {
+
             offset = 80;
         }
         if (divId == "#Locations" && $(window).width() <= 770) {

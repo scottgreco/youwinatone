@@ -114,6 +114,21 @@
             </div>
         </footer>
 
+        <div class="btn-fixed-bottom">
+            <div class="inner-btn">
+                <div class="arrow-up"></div>
+                <div>OwnA<span>ONE</span>.com</div>
+            </div>
+            <div class="inner-content">
+                <span class="close">×</span>
+                <p class="p-text-01">INTERESTED IN</p>
+                <p class="p-text-02">OWNING A</p>
+                <p class="p-text-03"><span>ONE</span>?</p>
+                <div class="subtext">We're Now <span>Franchising</span> Nationwide!</div>
+                <a href="http://www.ownaone.com/" target="_blank">OwnA<span>ONE</span>.com</a>
+            </div>
+        </div>
+
         <script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

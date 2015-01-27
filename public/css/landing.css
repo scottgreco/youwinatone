@@ -28,6 +28,146 @@ body{height:auto !important;}
 @font-face {    font-family: 'MyriadProSemibold';    src: url('../../fonts/myriadpro-semibold.eot');    src: url('../../fonts/myriadpro-semibold.eot') format('embedded-opentype'),         url('../../fonts/myriadpro-semibold.woff') format('woff'),         url('../../fonts/myriadpro-semibold.ttf') format('truetype'),         url('../../fonts/myriadpro-semibold.svg#MyriadProSemibold') format('svg');}
 
 
+.btn-fixed-bottom {
+    position: fixed;
+    bottom: -170px;
+    right: 50px;
+    background: #231f20;
+    color: white;
+    padding: 5px;
+    padding-top: 10px;
+    width: 200px;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-family: museo_sans300;
+    text-align: center;
+    cursor: pointer;
+    -webkit-transition: bottom 0.5s;
+    transition: bottom 0.5s;
+}
+
+.btn-fixed-bottom > div {
+    margin-bottom: -3px;
+    padding-top: 0px;
+}
+
+.btn-fixed-bottom .inner-btn {
+    font-size: 11px;
+}
+
+.btn-fixed-bottom .inner-btn span {
+    color:#F5C65D;
+    font-weight: bold;
+}
+
+.btn-fixed-bottom .arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #F5C65D;
+    position: absolute;
+    top: 3px;
+    left: 50%;
+    margin-left: -2px;
+}
+
+.btn-fixed-bottom .inner-content span.close {
+    border-radius: 100%;
+    border: 1px solid #F5C65D;
+    color:#F5C65D;
+    padding: 3px;
+    font-size: 12px;
+    line-height: 7px;
+    opacity: 1;
+    position: absolute;
+    top: 4px;
+    right: 5px;
+    font-weight: normal;
+    display: none;
+}
+
+.btn-fixed-bottom .inner-content span.close:hover {
+    background: #F5C65D;
+    border-color: #231f20;
+    color :#000;
+}
+
+.btn-fixed-bottom .inner-content p{
+    font-family: museo_sans100;
+    margin: 0 0 6px 0;
+}
+
+.btn-fixed-bottom .inner-content p.p-text-01 {
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+.btn-fixed-bottom .inner-content p.p-text-02 {
+    font-size: 30px;
+}
+
+.btn-fixed-bottom .inner-content p.p-text-03 {
+     font-size: 60px;
+    margin: 20px 0;
+ }
+
+.btn-fixed-bottom .inner-content p.p-text-03 span{
+    color:#F5C65D;
+    font-weight: bold;
+}
+
+.btn-fixed-bottom .inner-content .subtext {
+    font-size: 10px;
+}
+
+.btn-fixed-bottom .inner-content .subtext span {
+    color:#F5C65D;
+}
+
+.btn-fixed-bottom .inner-content a{
+    background: #F5C65D;
+    color: #231f20;
+    font-size: 11px;
+    border-radius: 5px;
+    width: 90%;
+    text-align: center;
+    display: block;
+    margin: 10px auto;
+    padding: 3px;
+    font-family: museo_sans500;
+    text-decoration: none;
+}
+
+.btn-fixed-bottom .inner-content a span {
+    font-weight: bold;
+}
+
+.btn-fixed-bottom:hover {
+    margin-bottom: 5px;
+}
+.btn-fixed-bottom.open:hover {
+    margin-bottom: 0px;
+}
+
+.btn-fixed-bottom.open {
+    bottom: 0px;
+    cursor: default;
+}
+
+.btn-fixed-bottom.open .close {
+    display: inline-block !important;
+}
+
+.btn-fixed-bottom.open .inner-btn {
+    display: none;
+}
+
+
 .tel,.tel:visited {
      /*for small screens */ 
      display:block; color:#fff; 
