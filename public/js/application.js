@@ -880,11 +880,16 @@ $(document).ready(function () {
 
     $(document).on('click', '.video', function (e) {
         $('#videoModal').modal('show');
+        $("body").addClass("block");
         var url = $(this).data("video");
         $('#frame-video').attr('src', url + "?autoplay=1");
 
         return false;
     });
+
+    $('#videoModal').on('hidden.bs.modal', function () {
+        $("body").removeClass("block");
+    })
 
     $('#videoModal').on('hidden.bs.modal', function(e) {
         $('#frame-video').removeAttr('src');
