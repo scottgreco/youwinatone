@@ -31,7 +31,7 @@ composer_options=--no-dev
 display_errors=Off
 document_root=/public
 max_execution_time=60
-memory_limit=256M
+memory_limit=512M
 zlib.output_compression=Off
 
 [aws:elasticbeanstalk:hostmanager]

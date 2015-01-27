@@ -38,7 +38,7 @@ $(document).ready(function () {
     $(window).on("resize", function () {
         $('.modal:visible').each(centerModal);
     });
-    
+
     if( navigator.userAgent.match(/iPhone|iPad|iPod/i) ) {
 /*
         $('.modal').on('show.bs.modal', function() {
