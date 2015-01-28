@@ -26,7 +26,7 @@ return array(
 	|
 	*/
 
-	'default' => 'sqlite',
+	'default' => 'mysql',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -54,10 +54,10 @@ return array(
 
 		'mysql' => array(
 			'driver'    => 'mysql',
-			'host'      => 'http://dbywaolive.cxk5qpyqrckd.us-east-1.rds.amazonaws.com:3306/',
-			'database'  => 'dbYWAOLive',
-			'username'  => 'db_admin',
-			'password'  => 'ywao2014*',
+			'host'      => 'youwinatone.cbtvwrkjgou8.us-west-1.rds.amazonaws.com',
+			'database'  => 'youwinatone',
+			'username'  => 'admin',
+			'password'  => 'ywao2015*',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
