@@ -6,10 +6,10 @@
 <script>
     var map;
     var baseUrl = '';
-    //var baseImageManagersUrl = 'https://s3-us-west-1.amazonaws.com/ywao-storage/managers/';
-    //var baseImageOfficesUrl = 'https://s3-us-west-1.amazonaws.com/ywao-storage/officers/';
-    var baseImageOfficesUrl  = baseUrl + 'images/offices/';
-    var baseImageManagersUrl  =  baseUrl + "/images/managers/";
+    var baseImageManagersUrl = 'https://s3-us-west-1.amazonaws.com/ywao-storage/managers/';
+    var baseImageOfficesUrl = 'https://s3-us-west-1.amazonaws.com/ywao-storage/officers/';
+    //var baseImageOfficesUrl  = baseUrl + 'images/offices/';
+    //var baseImageManagersUrl  =  baseUrl + "/images/managers/";
 
     var infowindow;
     var eviction_list = [];
