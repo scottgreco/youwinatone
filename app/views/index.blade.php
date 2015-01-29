@@ -6,6 +6,11 @@
 <script>
     var map;
     var baseUrl = '';
+    //var baseImageManagersUrl = 'https://s3-us-west-1.amazonaws.com/ywao-storage/managers/';
+    //var baseImageOfficesUrl = 'https://s3-us-west-1.amazonaws.com/ywao-storage/officers/';
+    var baseImageOfficesUrl  = baseUrl + 'images/offices/';
+    var baseImageManagersUrl  =  baseUrl + "/images/managers/";
+
     var infowindow;
     var eviction_list = [];
     var offices;
@@ -164,7 +169,7 @@
         }
 
         var contentString = '<div>' +
-            '<div class="infowindow-img"><img class="office_img" alt="Office" title="Office" src="' + baseUrl + '/images/bx1.png' + '" data-original="' + baseUrl + 'images/offices/' + office["image"] + '" alt="" /></div>' +
+            '<div class="infowindow-img"><img class="office_img" alt="Office" title="Office" src="' + baseUrl + '/images/bx1.png' + '" data-original="' + baseImageOfficesUrl + office["image"] + '" alt="" /></div>' +
             '<div class="infowindow-text">' +
             '<span>' + office["name"].toUpperCase() + '<br/>' + office["address"] + '<br/>' + office["city"] + ', ' + office["state"] + ', ' + zipCode + '<br/>' + office["phone"] + '<br/><a href="javascript:void(0);" class="view-more">View more</a></span>' +
             '</div>' +
@@ -204,7 +209,7 @@
 
                     var manager = office.manager;
 
-                    $(".office_img").attr("data-original", baseUrl + 'images/offices/' + office["image"]);
+                    $(".office_img").attr("data-original", baseImageOfficesUrl + office["image"]);
                     $(".office_img").attr("src", baseUrl + "/images/bx1.png");
                     $(".office_img").lazyload({
                         effect: "fadeIn"
@@ -223,7 +228,7 @@
                     }
                     $(".us_description").text(manager["description"]);
                     $("#man_email").val(manager["email"]);
-                    $(".manager_img").attr("data-original", baseUrl + "/images/managers/" + manager["image"]);
+                    $(".manager_img").attr("data-original", baseImageManagersUrl + manager["image"]);
                     $(".manager_img").attr("src", baseUrl + "/images/Placeholder.png");
                     $(".manager_img").lazyload({
                         effect: "fadeIn"

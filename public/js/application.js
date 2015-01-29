@@ -48,9 +48,7 @@ $(document).ready(function () {
         return false;
     });
 
-    if($(window).width() > 770) {
-        $(".btn-fixed-bottom").addClass("open");
-    }
+    $(".btn-fixed-bottom").addClass("open");
 
     if($(window).width() < 400){
         $(".btn-fixed-bottom").on("click", ".p-text-01", function(e){
