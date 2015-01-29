@@ -4,12 +4,20 @@
 	"keywords": ["framework", "laravel"],
 	"license": "MIT",
 	"type": "project",
+    "repositories":
+        [
+            {
+                "type": "vcs",
+                "url": "https://github.com/jramoseguinoa/Laravel-Administrator"
+            }
+        ],
 	"require": {
 		"laravel/framework": "4.2.*",
         "barryvdh/laravel-ide-helper": "dev-master",
         "ceesvanegmond/minify": "2.0.*",
 		"frozennode/administrator": "dev-master",
-        "way/generators": "~2.0"
+        "way/generators": "~2.0",
+        "aws/aws-sdk-php-laravel": "1.*"
 	},
 
 	"autoload": {

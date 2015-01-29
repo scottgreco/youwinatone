@@ -36,3 +36,49 @@ class Office extends Eloquent {
     }
 
 }
+
+Office::created(function($office)
+{
+    $s3 = App::make('aws')->get('s3');
+    $s3->putObject(array(
+        'Bucket'     => 'ywao-storage',
+        'Key'        => 'offices/'.$office->image,
+        'SourceFile' => public_path() . '/images/offices/' . $office->image,
+    ));
+
+    unlink(public_path() . '/images/offices/' . $office->image);
+});
+
+Office::updated(function($office)
+{
+    $s3 = App::make('aws')->get('s3');
+
+    $exists = $s3->doesObjectExist('ywao-storage', 'offices/'.$office->image);
+
+    if($exists === false) {
+        $s3->putObject(array(
+            'Bucket'     => 'ywao-storage',
+            'Key'        => 'offices/'.$office->image,
+            'SourceFile' => public_path() . '/images/offices/' . $office->image,
+        ));
+
+        unlink(public_path() . '/images/offices/' . $office->image);
+    }
+
+});
+
+Office::deleted(function($office)
+{
+    $s3 = App::make('aws')->get('s3');
+    $exists = $s3->doesObjectExist('ywao-storage', 'offices/'.$office->image);
+
+    if($exists === true) {
+        $s3->deleteObject(array(
+            'Bucket' => 'ywao-storage',
+            'Key' => 'offices/' . $office->image
+        ));
+    }
+
+
+
+});

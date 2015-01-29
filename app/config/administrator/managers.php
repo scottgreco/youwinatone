@@ -52,6 +52,7 @@ return array(
             'title' => 'Image (Max. size 2MB)',
             'type' => 'image',
             'location' => public_path() . '/images/managers/',
+            'display_location' => 'https://s3-us-west-1.amazonaws.com/ywao-storage/managers/',
             'naming' => 'random',
             'length' => 20,
             'size_limit' => 2
