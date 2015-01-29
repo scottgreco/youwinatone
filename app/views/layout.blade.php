@@ -198,6 +198,25 @@
         <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?ev=6019237122409&amp;cd[value]=0.00&amp;cd[currency]=USD&amp;noscript=1" /></noscript>
 
         <!-- Segment Pixel - YouWinAtONE- Retargeting - Agent Recruitment - DO NOT MODIFY -->
-        <script type='text/javascript' src='//pool.a8723.com/pixel?id=687&t=js&r=1'></script><!-- End of Segment Pixel —>
+        <script type='text/javascript' src='//pool.a8723.com/pixel?id=687&t=js&r=1'></script>
+        <!-- End of Segment Pixel -->
+
+        <script type="text/javascript">
+        adroll_adv_id = "VPZ6BRQ77VGZZBFWTU5Q6I";
+        adroll_pix_id = "XJFHQPKFJREGTN3W6FEJ3P";
+        (function () {
+        var oldonload = window.onload;
+        window.onload = function(){
+           __adroll_loaded=true;
+           var scr = document.createElement("script");
+           var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com");
+           scr.setAttribute('async', 'true');
+           scr.type = "text/javascript";
+           scr.src = host + "/j/roundtrip.js";
+           ((document.getElementsByTagName('head') || [null])[0] ||
+            document.getElementsByTagName('script')[0].parentNode).appendChild(scr);
+           if(oldonload){oldonload()}};
+        }());
+        </script>
     </body>
 </html>
